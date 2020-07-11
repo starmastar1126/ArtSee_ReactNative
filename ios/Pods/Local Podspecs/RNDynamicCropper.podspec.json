@@ -1,0 +1,27 @@
+{
+  "name": "RNDynamicCropper",
+  "version": "0.1.0",
+  "summary": "Take an image in a react native app and crop it dynamically",
+  "homepage": "n/a",
+  "license": "MIT",
+  "platforms": {
+    "ios": "7.0"
+  },
+  "authors": {
+    "rob117": ""
+  },
+  "source": {
+    "git": "https://github.com/rob117/react-native-dynamic-cropper.git",
+    "tag": "v#{version}"
+  },
+  "source_files": "ios/src/*.{h,m}",
+  "requires_arc": true,
+  "dependencies": {
+    "React": [
+
+    ],
+    "TOCropViewController": [
+
+    ]
+  }
+}

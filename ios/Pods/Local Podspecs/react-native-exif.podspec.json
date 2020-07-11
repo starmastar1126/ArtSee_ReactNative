@@ -1,0 +1,31 @@
+{
+  "name": "react-native-exif",
+  "version": "0.4.0",
+  "summary": "Exif reader for react-native support for ios and android",
+  "description": "Exif reader for react-native support for ios and android",
+  "license": "MIT",
+  "authors": {
+    "name": "Francisco Sanchez",
+    "email": "psm1984@gmail.com"
+  },
+  "homepage": "https://github.com/francisco-sanchez-molina/react-native-exif",
+  "source": {
+    "git": "https://github.com/francisco-sanchez-molina/react-native-exif",
+    "tag": "0.4.0"
+  },
+  "requires_arc": true,
+  "platforms": {
+    "ios": "8.0"
+  },
+  "preserve_paths": [
+    "README.md",
+    "package.json",
+    "index.js"
+  ],
+  "source_files": "ios/ReactNativeExif/*.{h,m}",
+  "dependencies": {
+    "React": [
+
+    ]
+  }
+}

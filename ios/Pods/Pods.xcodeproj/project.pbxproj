@@ -1,0 +1,2163 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0000000016A0 /* RNDynamicCropper.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000100 /* RNDynamicCropper.m */; };
+		0000000016C0 /* RNDynamicCropper.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000000F0 /* RNDynamicCropper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000001710 /* RNDynamicCropper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000001700 /* RNDynamicCropper-dummy.m */; };
+		000000001790 /* RCTAssert.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000140 /* RCTAssert.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		0000000017A0 /* RCTBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000170 /* RCTBridge.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		0000000017B0 /* RCTBundleURLProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000000001C0 /* RCTBundleURLProvider.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		0000000017C0 /* RCTConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000000001E0 /* RCTConvert.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		0000000017D0 /* RCTCxxConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000200 /* RCTCxxConvert.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		0000000017E0 /* RCTDisplayLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000230 /* RCTDisplayLink.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		0000000017F0 /* RCTErrorInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000260 /* RCTErrorInfo.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001800 /* RCTEventDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000280 /* RCTEventDispatcher.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001810 /* RCTFrameUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000000002A0 /* RCTFrameUpdate.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001820 /* RCTImageSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000000002C0 /* RCTImageSource.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001830 /* RCTJavaScriptLoader.mm in Sources */ = {isa = PBXBuildFile; fileRef = 000000000300 /* RCTJavaScriptLoader.mm */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001840 /* RCTJSStackFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000320 /* RCTJSStackFrame.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001850 /* RCTKeyCommands.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000340 /* RCTKeyCommands.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001860 /* RCTLog.mm in Sources */ = {isa = PBXBuildFile; fileRef = 000000000360 /* RCTLog.mm */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001870 /* RCTManagedPointer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 000000000380 /* RCTManagedPointer.mm */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001880 /* RCTModuleData.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0000000003A0 /* RCTModuleData.mm */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001890 /* RCTModuleMethod.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0000000003C0 /* RCTModuleMethod.mm */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		0000000018A0 /* RCTMultipartDataTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000000003E0 /* RCTMultipartDataTask.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		0000000018B0 /* RCTMultipartStreamReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000400 /* RCTMultipartStreamReader.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		0000000018C0 /* RCTParserUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000430 /* RCTParserUtils.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		0000000018D0 /* RCTPerformanceLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000450 /* RCTPerformanceLogger.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		0000000018E0 /* RCTPlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000470 /* RCTPlatform.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		0000000018F0 /* RCTReloadCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000490 /* RCTReloadCommand.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001900 /* RCTRootContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000000004B0 /* RCTRootContentView.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001910 /* RCTRootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000000004D0 /* RCTRootView.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001920 /* RCTTouchEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000510 /* RCTTouchEvent.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001930 /* RCTTouchHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000530 /* RCTTouchHandler.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001940 /* RCTUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000570 /* RCTUtils.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001950 /* RCTVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000590 /* RCTVersion.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001960 /* RCTSurface.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0000000005C0 /* RCTSurface.mm */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001970 /* RCTSurfaceRootShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000000005F0 /* RCTSurfaceRootShadowView.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001980 /* RCTSurfaceRootView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 000000000620 /* RCTSurfaceRootView.mm */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001990 /* RCTSurfaceStage.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000640 /* RCTSurfaceStage.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		0000000019A0 /* RCTSurfaceView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 000000000670 /* RCTSurfaceView.mm */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		0000000019B0 /* RCTSurfaceHostingProxyRootView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0000000006A0 /* RCTSurfaceHostingProxyRootView.mm */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		0000000019C0 /* RCTSurfaceHostingView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0000000006C0 /* RCTSurfaceHostingView.mm */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		0000000019D0 /* RCTSurfaceSizeMeasureMode.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0000000006E0 /* RCTSurfaceSizeMeasureMode.mm */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		0000000019E0 /* RCTAccessibilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000710 /* RCTAccessibilityManager.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		0000000019F0 /* RCTAlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000730 /* RCTAlertManager.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001A00 /* RCTAppState.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000750 /* RCTAppState.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001A10 /* RCTAsyncLocalStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000770 /* RCTAsyncLocalStorage.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001A20 /* RCTClipboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000790 /* RCTClipboard.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001A30 /* RCTDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000000007B0 /* RCTDeviceInfo.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001A40 /* RCTDevSettings.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0000000007D0 /* RCTDevSettings.mm */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001A50 /* RCTEventEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000000007F0 /* RCTEventEmitter.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001A60 /* RCTExceptionsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000810 /* RCTExceptionsManager.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001A70 /* RCTI18nManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000830 /* RCTI18nManager.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001A80 /* RCTI18nUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000850 /* RCTI18nUtil.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001A90 /* RCTKeyboardObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000870 /* RCTKeyboardObserver.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001AA0 /* RCTLayoutAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000890 /* RCTLayoutAnimation.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001AB0 /* RCTLayoutAnimationGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000000008B0 /* RCTLayoutAnimationGroup.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001AC0 /* RCTRedBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000000008D0 /* RCTRedBox.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001AD0 /* RCTRedBoxExtraDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000000008F0 /* RCTRedBoxExtraDataViewController.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001AE0 /* RCTSourceCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000910 /* RCTSourceCode.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001AF0 /* RCTStatusBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000930 /* RCTStatusBarManager.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001B00 /* RCTTiming.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000950 /* RCTTiming.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001B10 /* RCTUIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000970 /* RCTUIManager.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001B20 /* RCTUIManagerObserverCoordinator.mm in Sources */ = {isa = PBXBuildFile; fileRef = 000000000990 /* RCTUIManagerObserverCoordinator.mm */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001B30 /* RCTUIManagerUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000000009B0 /* RCTUIManagerUtils.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001B40 /* RCTFPSGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000000009E0 /* RCTFPSGraph.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001B50 /* RCTPerfMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000A00 /* RCTPerfMonitor.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001B60 /* RCTProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000A20 /* RCTProfile.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001B70 /* RCTUIUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000A90 /* RCTUIUtils.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001B80 /* RCTActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000AC0 /* RCTActivityIndicatorView.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001B90 /* RCTActivityIndicatorViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000AE0 /* RCTActivityIndicatorViewManager.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001BA0 /* RCTBorderDrawing.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000B20 /* RCTBorderDrawing.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001BB0 /* RCTComponentData.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000B60 /* RCTComponentData.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001BC0 /* RCTConvert+CoreLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000B80 /* RCTConvert+CoreLocation.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001BD0 /* RCTConvert+Transform.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000BA0 /* RCTConvert+Transform.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001BE0 /* RCTDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000BC0 /* RCTDatePicker.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001BF0 /* RCTDatePickerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000BE0 /* RCTDatePickerManager.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001C00 /* RCTFont.mm in Sources */ = {isa = PBXBuildFile; fileRef = 000000000C00 /* RCTFont.mm */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001C10 /* RCTLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000C20 /* RCTLayout.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001C20 /* RCTMaskedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000C40 /* RCTMaskedView.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001C30 /* RCTMaskedViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000C60 /* RCTMaskedViewManager.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001C40 /* RCTModalHostView.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000C80 /* RCTModalHostView.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001C50 /* RCTModalHostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000CA0 /* RCTModalHostViewController.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001C60 /* RCTModalHostViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000CC0 /* RCTModalHostViewManager.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001C70 /* RCTModalManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000CE0 /* RCTModalManager.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001C80 /* RCTPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000D00 /* RCTPicker.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001C90 /* RCTPickerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000D20 /* RCTPickerManager.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001CA0 /* RCTProgressViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000D50 /* RCTProgressViewManager.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001CB0 /* RCTRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000D70 /* RCTRefreshControl.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001CC0 /* RCTRefreshControlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000D90 /* RCTRefreshControlManager.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001CD0 /* RCTRootShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000DB0 /* RCTRootShadowView.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001CE0 /* RCTSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000DD0 /* RCTSegmentedControl.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001CF0 /* RCTSegmentedControlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000DF0 /* RCTSegmentedControlManager.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001D00 /* RCTShadowView+Internal.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000E10 /* RCTShadowView+Internal.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001D10 /* RCTShadowView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000E30 /* RCTShadowView+Layout.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001D20 /* RCTShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000E50 /* RCTShadowView.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001D30 /* RCTSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000E70 /* RCTSlider.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001D40 /* RCTSliderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000E90 /* RCTSliderManager.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001D50 /* RCTSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000EB0 /* RCTSwitch.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001D60 /* RCTSwitchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000ED0 /* RCTSwitchManager.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001D70 /* RCTView.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000F00 /* RCTView.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001D80 /* RCTViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000F20 /* RCTViewManager.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001D90 /* RCTWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000F40 /* RCTWebView.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001DA0 /* RCTWebViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000F60 /* RCTWebViewManager.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001DB0 /* RCTWKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000F80 /* RCTWKWebView.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001DC0 /* RCTWKWebViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000FA0 /* RCTWKWebViewManager.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001DD0 /* RCTWrapperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000FC0 /* RCTWrapperViewController.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001DE0 /* RCTSafeAreaShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000000FF0 /* RCTSafeAreaShadowView.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001DF0 /* RCTSafeAreaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000001010 /* RCTSafeAreaView.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001E00 /* RCTSafeAreaViewLocalData.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000001030 /* RCTSafeAreaViewLocalData.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001E10 /* RCTSafeAreaViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000001050 /* RCTSafeAreaViewManager.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001E20 /* RCTScrollContentShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000001090 /* RCTScrollContentShadowView.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001E30 /* RCTScrollContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000000010B0 /* RCTScrollContentView.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001E40 /* RCTScrollContentViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000000010D0 /* RCTScrollContentViewManager.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001E50 /* RCTScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000000010F0 /* RCTScrollView.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001E60 /* RCTScrollViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000001110 /* RCTScrollViewManager.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001E70 /* UIView+React.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000001140 /* UIView+React.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
+		000000001E90 /* RCTAssert.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000130 /* RCTAssert.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000001EA0 /* RCTBridge+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000150 /* RCTBridge+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000001EB0 /* RCTBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000160 /* RCTBridge.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000001EC0 /* RCTBridgeDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000180 /* RCTBridgeDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000001ED0 /* RCTBridgeMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000190 /* RCTBridgeMethod.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000001EE0 /* RCTBridgeModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000001A0 /* RCTBridgeModule.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000001EF0 /* RCTBundleURLProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000001B0 /* RCTBundleURLProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000001F00 /* RCTConvert.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000001D0 /* RCTConvert.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000001F10 /* RCTCxxConvert.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000001F0 /* RCTCxxConvert.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000001F20 /* RCTDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000210 /* RCTDefines.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000001F30 /* RCTDisplayLink.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000220 /* RCTDisplayLink.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000001F40 /* RCTErrorCustomizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000240 /* RCTErrorCustomizer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000001F50 /* RCTErrorInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000250 /* RCTErrorInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000001F60 /* RCTEventDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000270 /* RCTEventDispatcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000001F70 /* RCTFrameUpdate.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000290 /* RCTFrameUpdate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000001F80 /* RCTImageSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000002B0 /* RCTImageSource.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000001F90 /* RCTInvalidating.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000002D0 /* RCTInvalidating.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000001FA0 /* RCTJavaScriptExecutor.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000002E0 /* RCTJavaScriptExecutor.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000001FB0 /* RCTJavaScriptLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000002F0 /* RCTJavaScriptLoader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000001FC0 /* RCTJSStackFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000310 /* RCTJSStackFrame.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000001FD0 /* RCTKeyCommands.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000330 /* RCTKeyCommands.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000001FE0 /* RCTLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000350 /* RCTLog.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000001FF0 /* RCTManagedPointer.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000370 /* RCTManagedPointer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002000 /* RCTModuleData.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000390 /* RCTModuleData.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002010 /* RCTModuleMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000003B0 /* RCTModuleMethod.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002020 /* RCTMultipartDataTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000003D0 /* RCTMultipartDataTask.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002030 /* RCTMultipartStreamReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000003F0 /* RCTMultipartStreamReader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002040 /* RCTNullability.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000410 /* RCTNullability.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002050 /* RCTParserUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000420 /* RCTParserUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002060 /* RCTPerformanceLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000440 /* RCTPerformanceLogger.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002070 /* RCTPlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000460 /* RCTPlatform.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002080 /* RCTReloadCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000480 /* RCTReloadCommand.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002090 /* RCTRootContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000004A0 /* RCTRootContentView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000020A0 /* RCTRootView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000004C0 /* RCTRootView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000020B0 /* RCTRootViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000004E0 /* RCTRootViewDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000020C0 /* RCTRootViewInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000004F0 /* RCTRootViewInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000020D0 /* RCTTouchEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000500 /* RCTTouchEvent.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000020E0 /* RCTTouchHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000520 /* RCTTouchHandler.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000020F0 /* RCTURLRequestDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000540 /* RCTURLRequestDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002100 /* RCTURLRequestHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000550 /* RCTURLRequestHandler.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002110 /* RCTUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000560 /* RCTUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002120 /* RCTVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000580 /* RCTVersion.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002130 /* RCTSurface.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000005B0 /* RCTSurface.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002140 /* RCTSurfaceDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000005D0 /* RCTSurfaceDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002150 /* RCTSurfaceRootShadowView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000005E0 /* RCTSurfaceRootShadowView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002160 /* RCTSurfaceRootShadowViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000600 /* RCTSurfaceRootShadowViewDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002170 /* RCTSurfaceRootView.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000610 /* RCTSurfaceRootView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002180 /* RCTSurfaceStage.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000630 /* RCTSurfaceStage.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002190 /* RCTSurfaceView+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000650 /* RCTSurfaceView+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000021A0 /* RCTSurfaceView.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000660 /* RCTSurfaceView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000021B0 /* RCTSurfaceHostingProxyRootView.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000690 /* RCTSurfaceHostingProxyRootView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000021C0 /* RCTSurfaceHostingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000006B0 /* RCTSurfaceHostingView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000021D0 /* RCTSurfaceSizeMeasureMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000006D0 /* RCTSurfaceSizeMeasureMode.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000021E0 /* RCTAccessibilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000700 /* RCTAccessibilityManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000021F0 /* RCTAlertManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000720 /* RCTAlertManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002200 /* RCTAppState.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000740 /* RCTAppState.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002210 /* RCTAsyncLocalStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000760 /* RCTAsyncLocalStorage.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002220 /* RCTClipboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000780 /* RCTClipboard.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002230 /* RCTDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000007A0 /* RCTDeviceInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002240 /* RCTDevSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000007C0 /* RCTDevSettings.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002250 /* RCTEventEmitter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000007E0 /* RCTEventEmitter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002260 /* RCTExceptionsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000800 /* RCTExceptionsManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002270 /* RCTI18nManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000820 /* RCTI18nManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002280 /* RCTI18nUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000840 /* RCTI18nUtil.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002290 /* RCTKeyboardObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000860 /* RCTKeyboardObserver.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000022A0 /* RCTLayoutAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000880 /* RCTLayoutAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000022B0 /* RCTLayoutAnimationGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000008A0 /* RCTLayoutAnimationGroup.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000022C0 /* RCTRedBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000008C0 /* RCTRedBox.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000022D0 /* RCTRedBoxExtraDataViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000008E0 /* RCTRedBoxExtraDataViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000022E0 /* RCTSourceCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000900 /* RCTSourceCode.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000022F0 /* RCTStatusBarManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000920 /* RCTStatusBarManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002300 /* RCTTiming.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000940 /* RCTTiming.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002310 /* RCTUIManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000960 /* RCTUIManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002320 /* RCTUIManagerObserverCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000980 /* RCTUIManagerObserverCoordinator.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002330 /* RCTUIManagerUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000009A0 /* RCTUIManagerUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002340 /* RCTFPSGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000009D0 /* RCTFPSGraph.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002350 /* RCTMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000009F0 /* RCTMacros.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002360 /* RCTProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000A10 /* RCTProfile.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002370 /* RCTUIUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000A80 /* RCTUIUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002380 /* RCTActivityIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000AB0 /* RCTActivityIndicatorView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002390 /* RCTActivityIndicatorViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000AD0 /* RCTActivityIndicatorViewManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000023A0 /* RCTAnimationType.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000AF0 /* RCTAnimationType.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000023B0 /* RCTAutoInsetsProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000B00 /* RCTAutoInsetsProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000023C0 /* RCTBorderDrawing.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000B10 /* RCTBorderDrawing.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000023D0 /* RCTBorderStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000B30 /* RCTBorderStyle.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000023E0 /* RCTComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000B40 /* RCTComponent.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000023F0 /* RCTComponentData.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000B50 /* RCTComponentData.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002400 /* RCTConvert+CoreLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000B70 /* RCTConvert+CoreLocation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002410 /* RCTConvert+Transform.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000B90 /* RCTConvert+Transform.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002420 /* RCTDatePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000BB0 /* RCTDatePicker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002430 /* RCTDatePickerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000BD0 /* RCTDatePickerManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002440 /* RCTFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000BF0 /* RCTFont.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002450 /* RCTLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000C10 /* RCTLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002460 /* RCTMaskedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000C30 /* RCTMaskedView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002470 /* RCTMaskedViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000C50 /* RCTMaskedViewManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002480 /* RCTModalHostView.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000C70 /* RCTModalHostView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002490 /* RCTModalHostViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000C90 /* RCTModalHostViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000024A0 /* RCTModalHostViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000CB0 /* RCTModalHostViewManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000024B0 /* RCTModalManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000CD0 /* RCTModalManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000024C0 /* RCTPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000CF0 /* RCTPicker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000024D0 /* RCTPickerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000D10 /* RCTPickerManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000024E0 /* RCTPointerEvents.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000D30 /* RCTPointerEvents.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000024F0 /* RCTProgressViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000D40 /* RCTProgressViewManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002500 /* RCTRefreshControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000D60 /* RCTRefreshControl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002510 /* RCTRefreshControlManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000D80 /* RCTRefreshControlManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002520 /* RCTRootShadowView.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000DA0 /* RCTRootShadowView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002530 /* RCTSegmentedControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000DC0 /* RCTSegmentedControl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002540 /* RCTSegmentedControlManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000DE0 /* RCTSegmentedControlManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002550 /* RCTShadowView+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000E00 /* RCTShadowView+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002560 /* RCTShadowView+Layout.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000E20 /* RCTShadowView+Layout.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002570 /* RCTShadowView.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000E40 /* RCTShadowView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002580 /* RCTSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000E60 /* RCTSlider.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002590 /* RCTSliderManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000E80 /* RCTSliderManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000025A0 /* RCTSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000EA0 /* RCTSwitch.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000025B0 /* RCTSwitchManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000EC0 /* RCTSwitchManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000025C0 /* RCTTextDecorationLineType.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000EE0 /* RCTTextDecorationLineType.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000025D0 /* RCTView.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000EF0 /* RCTView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000025E0 /* RCTViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000F10 /* RCTViewManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000025F0 /* RCTWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000F30 /* RCTWebView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002600 /* RCTWebViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000F50 /* RCTWebViewManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002610 /* RCTWKWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000F70 /* RCTWKWebView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002620 /* RCTWKWebViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000F90 /* RCTWKWebViewManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002630 /* RCTWrapperViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000FB0 /* RCTWrapperViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002640 /* RCTSafeAreaShadowView.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000000FE0 /* RCTSafeAreaShadowView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002650 /* RCTSafeAreaView.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000001000 /* RCTSafeAreaView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002660 /* RCTSafeAreaViewLocalData.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000001020 /* RCTSafeAreaViewLocalData.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002670 /* RCTSafeAreaViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000001040 /* RCTSafeAreaViewManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002680 /* RCTScrollableProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000001070 /* RCTScrollableProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002690 /* RCTScrollContentShadowView.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000001080 /* RCTScrollContentShadowView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000026A0 /* RCTScrollContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000010A0 /* RCTScrollContentView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000026B0 /* RCTScrollContentViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000010C0 /* RCTScrollContentViewManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000026C0 /* RCTScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000010E0 /* RCTScrollView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000026D0 /* RCTScrollViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000001100 /* RCTScrollViewManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000026E0 /* UIView+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000001120 /* UIView+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0000000026F0 /* UIView+React.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000001130 /* UIView+React.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002700 /* RCTProfileTrampoline-arm.S in Sources */ = {isa = PBXBuildFile; fileRef = 000000000A30 /* RCTProfileTrampoline-arm.S */; };
+		000000002710 /* RCTProfileTrampoline-arm64.S in Sources */ = {isa = PBXBuildFile; fileRef = 000000000A40 /* RCTProfileTrampoline-arm64.S */; };
+		000000002720 /* RCTProfileTrampoline-i386.S in Sources */ = {isa = PBXBuildFile; fileRef = 000000000A50 /* RCTProfileTrampoline-i386.S */; };
+		000000002730 /* RCTProfileTrampoline-x86_64.S in Sources */ = {isa = PBXBuildFile; fileRef = 000000000A60 /* RCTProfileTrampoline-x86_64.S */; };
+		000000002780 /* React-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000002770 /* React-dummy.m */; };
+		000000002880 /* ar.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 000000001420 /* ar.lproj */; };
+		000000002890 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 000000001430 /* Base.lproj */; };
+		0000000028A0 /* da-DK.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 000000001440 /* da-DK.lproj */; };
+		0000000028B0 /* de.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 000000001450 /* de.lproj */; };
+		0000000028C0 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 000000001460 /* en.lproj */; };
+		0000000028D0 /* es.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 000000001470 /* es.lproj */; };
+		0000000028E0 /* fa-IR.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 000000001480 /* fa-IR.lproj */; };
+		0000000028F0 /* fa.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 000000001490 /* fa.lproj */; };
+		000000002900 /* fr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 0000000014A0 /* fr.lproj */; };
+		000000002910 /* hu.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 0000000014B0 /* hu.lproj */; };
+		000000002920 /* id.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 0000000014C0 /* id.lproj */; };
+		000000002930 /* it.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 0000000014D0 /* it.lproj */; };
+		000000002940 /* ja.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 0000000014E0 /* ja.lproj */; };
+		000000002950 /* ko.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 0000000014F0 /* ko.lproj */; };
+		000000002960 /* ms.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 000000001500 /* ms.lproj */; };
+		000000002970 /* nl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 000000001510 /* nl.lproj */; };
+		000000002980 /* pl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 000000001520 /* pl.lproj */; };
+		000000002990 /* pt.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 000000001530 /* pt.lproj */; };
+		0000000029A0 /* ro.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 000000001540 /* ro.lproj */; };
+		0000000029B0 /* ru.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 000000001550 /* ru.lproj */; };
+		0000000029C0 /* tr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 000000001560 /* tr.lproj */; };
+		0000000029D0 /* vi.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 000000001570 /* vi.lproj */; };
+		0000000029E0 /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 000000001580 /* zh-Hans.lproj */; };
+		0000000029F0 /* zh-Hant.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 000000001590 /* zh-Hant.lproj */; };
+		000000002A40 /* UIImage+CropRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000001160 /* UIImage+CropRotate.m */; };
+		000000002A50 /* TOActivityCroppedImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000001190 /* TOActivityCroppedImageProvider.m */; };
+		000000002A60 /* TOCroppedImageAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000000011B0 /* TOCroppedImageAttributes.m */; };
+		000000002A70 /* TOCropViewControllerTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000000011D0 /* TOCropViewControllerTransitioning.m */; };
+		000000002A80 /* TOCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0000000011F0 /* TOCropViewController.m */; };
+		000000002A90 /* TOCropOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000001210 /* TOCropOverlayView.m */; };
+		000000002AA0 /* TOCropScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000001230 /* TOCropScrollView.m */; };
+		000000002AB0 /* TOCropToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000001250 /* TOCropToolbar.m */; };
+		000000002AC0 /* TOCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000001270 /* TOCropView.m */; };
+		000000002AE0 /* UIImage+CropRotate.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000001150 /* UIImage+CropRotate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002AF0 /* TOCropViewConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000001170 /* TOCropViewConstants.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002B00 /* TOActivityCroppedImageProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000001180 /* TOActivityCroppedImageProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002B10 /* TOCroppedImageAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000011A0 /* TOCroppedImageAttributes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002B20 /* TOCropViewControllerTransitioning.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000011C0 /* TOCropViewControllerTransitioning.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002B30 /* TOCropViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000011E0 /* TOCropViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002B40 /* TOCropOverlayView.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000001200 /* TOCropOverlayView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002B50 /* TOCropScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000001220 /* TOCropScrollView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002B60 /* TOCropToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000001240 /* TOCropToolbar.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002B70 /* TOCropView.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000001260 /* TOCropView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002BB0 /* TOCropViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000002BA0 /* TOCropViewController-dummy.m */; };
+		000000002C30 /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0000000012A0 /* Utils.cpp */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC -fno-objc-arc"; }; };
+		000000002C40 /* YGConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0000000012C0 /* YGConfig.cpp */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC -fno-objc-arc"; }; };
+		000000002C50 /* YGEnums.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0000000012E0 /* YGEnums.cpp */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC -fno-objc-arc"; }; };
+		000000002C60 /* YGLayout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000001310 /* YGLayout.cpp */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC -fno-objc-arc"; }; };
+		000000002C70 /* YGMarker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000001340 /* YGMarker.cpp */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC -fno-objc-arc"; }; };
+		000000002C80 /* YGNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000001360 /* YGNode.cpp */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC -fno-objc-arc"; }; };
+		000000002C90 /* YGNodePrint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000001380 /* YGNodePrint.cpp */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC -fno-objc-arc"; }; };
+		000000002CA0 /* YGStyle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0000000013A0 /* YGStyle.cpp */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC -fno-objc-arc"; }; };
+		000000002CB0 /* YGValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0000000013C0 /* YGValue.cpp */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC -fno-objc-arc"; }; };
+		000000002CC0 /* Yoga.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0000000013F0 /* Yoga.cpp */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC -fno-objc-arc"; }; };
+		000000002CE0 /* CompactValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000001280 /* CompactValue.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002CF0 /* instrumentation.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000001290 /* instrumentation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002D00 /* Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000012B0 /* Utils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002D10 /* YGConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000012D0 /* YGConfig.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002D20 /* YGEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000012F0 /* YGEnums.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002D30 /* YGFloatOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000001300 /* YGFloatOptional.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002D40 /* YGLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000001320 /* YGLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002D50 /* YGMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000001330 /* YGMacros.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002D60 /* YGMarker.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000001350 /* YGMarker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002D70 /* YGNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000001370 /* YGNode.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002D80 /* YGNodePrint.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000001390 /* YGNodePrint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002D90 /* YGStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000013B0 /* YGStyle.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002DA0 /* YGValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000013D0 /* YGValue.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002DB0 /* Yoga-internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 0000000013E0 /* Yoga-internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002DC0 /* Yoga.h in Headers */ = {isa = PBXBuildFile; fileRef = 000000001400 /* Yoga.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		000000002E10 /* yoga-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000002E00 /* yoga-dummy.m */; };
+		000000002F10 /* Pods-artseeapp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 000000002F00 /* Pods-artseeapp-dummy.m */; };
+		000000002F40 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000002F30 /* JavaScriptCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		000000002A00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 000000002800;
+			remoteInfo = "TOCropViewController-TOCropViewControllerBundle";
+		};
+		000000002F50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 000000001630;
+			remoteInfo = RNDynamicCropper;
+		};
+		000000002F70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 000000001720;
+			remoteInfo = React;
+		};
+		000000002F90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 000000002790;
+			remoteInfo = TOCropViewController;
+		};
+		000000002FB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 000000001720;
+			remoteInfo = React;
+		};
+		000000002FD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 000000002BC0;
+			remoteInfo = yoga;
+		};
+		000000002FF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 000000002790;
+			remoteInfo = TOCropViewController;
+		};
+		000000003010 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 000000002BC0;
+			remoteInfo = yoga;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0000000000E0 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0000000000F0 /* RNDynamicCropper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RNDynamicCropper.h; path = ios/src/RNDynamicCropper.h; sourceTree = "<group>"; };
+		000000000100 /* RNDynamicCropper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RNDynamicCropper.m; path = ios/src/RNDynamicCropper.m; sourceTree = "<group>"; };
+		000000000130 /* RCTAssert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTAssert.h; sourceTree = "<group>"; };
+		000000000140 /* RCTAssert.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTAssert.m; sourceTree = "<group>"; };
+		000000000150 /* RCTBridge+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RCTBridge+Private.h"; sourceTree = "<group>"; };
+		000000000160 /* RCTBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTBridge.h; sourceTree = "<group>"; };
+		000000000170 /* RCTBridge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTBridge.m; sourceTree = "<group>"; };
+		000000000180 /* RCTBridgeDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTBridgeDelegate.h; sourceTree = "<group>"; };
+		000000000190 /* RCTBridgeMethod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTBridgeMethod.h; sourceTree = "<group>"; };
+		0000000001A0 /* RCTBridgeModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTBridgeModule.h; sourceTree = "<group>"; };
+		0000000001B0 /* RCTBundleURLProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTBundleURLProvider.h; sourceTree = "<group>"; };
+		0000000001C0 /* RCTBundleURLProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTBundleURLProvider.m; sourceTree = "<group>"; };
+		0000000001D0 /* RCTConvert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTConvert.h; sourceTree = "<group>"; };
+		0000000001E0 /* RCTConvert.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTConvert.m; sourceTree = "<group>"; };
+		0000000001F0 /* RCTCxxConvert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTCxxConvert.h; sourceTree = "<group>"; };
+		000000000200 /* RCTCxxConvert.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTCxxConvert.m; sourceTree = "<group>"; };
+		000000000210 /* RCTDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTDefines.h; sourceTree = "<group>"; };
+		000000000220 /* RCTDisplayLink.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTDisplayLink.h; sourceTree = "<group>"; };
+		000000000230 /* RCTDisplayLink.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTDisplayLink.m; sourceTree = "<group>"; };
+		000000000240 /* RCTErrorCustomizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTErrorCustomizer.h; sourceTree = "<group>"; };
+		000000000250 /* RCTErrorInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTErrorInfo.h; sourceTree = "<group>"; };
+		000000000260 /* RCTErrorInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTErrorInfo.m; sourceTree = "<group>"; };
+		000000000270 /* RCTEventDispatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTEventDispatcher.h; sourceTree = "<group>"; };
+		000000000280 /* RCTEventDispatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTEventDispatcher.m; sourceTree = "<group>"; };
+		000000000290 /* RCTFrameUpdate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTFrameUpdate.h; sourceTree = "<group>"; };
+		0000000002A0 /* RCTFrameUpdate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTFrameUpdate.m; sourceTree = "<group>"; };
+		0000000002B0 /* RCTImageSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTImageSource.h; sourceTree = "<group>"; };
+		0000000002C0 /* RCTImageSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTImageSource.m; sourceTree = "<group>"; };
+		0000000002D0 /* RCTInvalidating.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTInvalidating.h; sourceTree = "<group>"; };
+		0000000002E0 /* RCTJavaScriptExecutor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTJavaScriptExecutor.h; sourceTree = "<group>"; };
+		0000000002F0 /* RCTJavaScriptLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTJavaScriptLoader.h; sourceTree = "<group>"; };
+		000000000300 /* RCTJavaScriptLoader.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTJavaScriptLoader.mm; sourceTree = "<group>"; };
+		000000000310 /* RCTJSStackFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTJSStackFrame.h; sourceTree = "<group>"; };
+		000000000320 /* RCTJSStackFrame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTJSStackFrame.m; sourceTree = "<group>"; };
+		000000000330 /* RCTKeyCommands.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTKeyCommands.h; sourceTree = "<group>"; };
+		000000000340 /* RCTKeyCommands.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTKeyCommands.m; sourceTree = "<group>"; };
+		000000000350 /* RCTLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTLog.h; sourceTree = "<group>"; };
+		000000000360 /* RCTLog.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTLog.mm; sourceTree = "<group>"; };
+		000000000370 /* RCTManagedPointer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTManagedPointer.h; sourceTree = "<group>"; };
+		000000000380 /* RCTManagedPointer.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTManagedPointer.mm; sourceTree = "<group>"; };
+		000000000390 /* RCTModuleData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTModuleData.h; sourceTree = "<group>"; };
+		0000000003A0 /* RCTModuleData.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTModuleData.mm; sourceTree = "<group>"; };
+		0000000003B0 /* RCTModuleMethod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTModuleMethod.h; sourceTree = "<group>"; };
+		0000000003C0 /* RCTModuleMethod.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTModuleMethod.mm; sourceTree = "<group>"; };
+		0000000003D0 /* RCTMultipartDataTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTMultipartDataTask.h; sourceTree = "<group>"; };
+		0000000003E0 /* RCTMultipartDataTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTMultipartDataTask.m; sourceTree = "<group>"; };
+		0000000003F0 /* RCTMultipartStreamReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTMultipartStreamReader.h; sourceTree = "<group>"; };
+		000000000400 /* RCTMultipartStreamReader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTMultipartStreamReader.m; sourceTree = "<group>"; };
+		000000000410 /* RCTNullability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTNullability.h; sourceTree = "<group>"; };
+		000000000420 /* RCTParserUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTParserUtils.h; sourceTree = "<group>"; };
+		000000000430 /* RCTParserUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTParserUtils.m; sourceTree = "<group>"; };
+		000000000440 /* RCTPerformanceLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTPerformanceLogger.h; sourceTree = "<group>"; };
+		000000000450 /* RCTPerformanceLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTPerformanceLogger.m; sourceTree = "<group>"; };
+		000000000460 /* RCTPlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTPlatform.h; sourceTree = "<group>"; };
+		000000000470 /* RCTPlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTPlatform.m; sourceTree = "<group>"; };
+		000000000480 /* RCTReloadCommand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTReloadCommand.h; sourceTree = "<group>"; };
+		000000000490 /* RCTReloadCommand.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTReloadCommand.m; sourceTree = "<group>"; };
+		0000000004A0 /* RCTRootContentView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTRootContentView.h; sourceTree = "<group>"; };
+		0000000004B0 /* RCTRootContentView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTRootContentView.m; sourceTree = "<group>"; };
+		0000000004C0 /* RCTRootView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTRootView.h; sourceTree = "<group>"; };
+		0000000004D0 /* RCTRootView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTRootView.m; sourceTree = "<group>"; };
+		0000000004E0 /* RCTRootViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTRootViewDelegate.h; sourceTree = "<group>"; };
+		0000000004F0 /* RCTRootViewInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTRootViewInternal.h; sourceTree = "<group>"; };
+		000000000500 /* RCTTouchEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTTouchEvent.h; sourceTree = "<group>"; };
+		000000000510 /* RCTTouchEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTTouchEvent.m; sourceTree = "<group>"; };
+		000000000520 /* RCTTouchHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTTouchHandler.h; sourceTree = "<group>"; };
+		000000000530 /* RCTTouchHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTTouchHandler.m; sourceTree = "<group>"; };
+		000000000540 /* RCTURLRequestDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTURLRequestDelegate.h; sourceTree = "<group>"; };
+		000000000550 /* RCTURLRequestHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTURLRequestHandler.h; sourceTree = "<group>"; };
+		000000000560 /* RCTUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTUtils.h; sourceTree = "<group>"; };
+		000000000570 /* RCTUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTUtils.m; sourceTree = "<group>"; };
+		000000000580 /* RCTVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTVersion.h; sourceTree = "<group>"; };
+		000000000590 /* RCTVersion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTVersion.m; sourceTree = "<group>"; };
+		0000000005B0 /* RCTSurface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSurface.h; sourceTree = "<group>"; };
+		0000000005C0 /* RCTSurface.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTSurface.mm; sourceTree = "<group>"; };
+		0000000005D0 /* RCTSurfaceDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSurfaceDelegate.h; sourceTree = "<group>"; };
+		0000000005E0 /* RCTSurfaceRootShadowView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSurfaceRootShadowView.h; sourceTree = "<group>"; };
+		0000000005F0 /* RCTSurfaceRootShadowView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTSurfaceRootShadowView.m; sourceTree = "<group>"; };
+		000000000600 /* RCTSurfaceRootShadowViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSurfaceRootShadowViewDelegate.h; sourceTree = "<group>"; };
+		000000000610 /* RCTSurfaceRootView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSurfaceRootView.h; sourceTree = "<group>"; };
+		000000000620 /* RCTSurfaceRootView.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTSurfaceRootView.mm; sourceTree = "<group>"; };
+		000000000630 /* RCTSurfaceStage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSurfaceStage.h; sourceTree = "<group>"; };
+		000000000640 /* RCTSurfaceStage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTSurfaceStage.m; sourceTree = "<group>"; };
+		000000000650 /* RCTSurfaceView+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RCTSurfaceView+Internal.h"; sourceTree = "<group>"; };
+		000000000660 /* RCTSurfaceView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSurfaceView.h; sourceTree = "<group>"; };
+		000000000670 /* RCTSurfaceView.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTSurfaceView.mm; sourceTree = "<group>"; };
+		000000000690 /* RCTSurfaceHostingProxyRootView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSurfaceHostingProxyRootView.h; sourceTree = "<group>"; };
+		0000000006A0 /* RCTSurfaceHostingProxyRootView.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTSurfaceHostingProxyRootView.mm; sourceTree = "<group>"; };
+		0000000006B0 /* RCTSurfaceHostingView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSurfaceHostingView.h; sourceTree = "<group>"; };
+		0000000006C0 /* RCTSurfaceHostingView.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTSurfaceHostingView.mm; sourceTree = "<group>"; };
+		0000000006D0 /* RCTSurfaceSizeMeasureMode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSurfaceSizeMeasureMode.h; sourceTree = "<group>"; };
+		0000000006E0 /* RCTSurfaceSizeMeasureMode.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTSurfaceSizeMeasureMode.mm; sourceTree = "<group>"; };
+		000000000700 /* RCTAccessibilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTAccessibilityManager.h; sourceTree = "<group>"; };
+		000000000710 /* RCTAccessibilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTAccessibilityManager.m; sourceTree = "<group>"; };
+		000000000720 /* RCTAlertManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTAlertManager.h; sourceTree = "<group>"; };
+		000000000730 /* RCTAlertManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTAlertManager.m; sourceTree = "<group>"; };
+		000000000740 /* RCTAppState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTAppState.h; sourceTree = "<group>"; };
+		000000000750 /* RCTAppState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTAppState.m; sourceTree = "<group>"; };
+		000000000760 /* RCTAsyncLocalStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTAsyncLocalStorage.h; sourceTree = "<group>"; };
+		000000000770 /* RCTAsyncLocalStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTAsyncLocalStorage.m; sourceTree = "<group>"; };
+		000000000780 /* RCTClipboard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTClipboard.h; sourceTree = "<group>"; };
+		000000000790 /* RCTClipboard.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTClipboard.m; sourceTree = "<group>"; };
+		0000000007A0 /* RCTDeviceInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTDeviceInfo.h; sourceTree = "<group>"; };
+		0000000007B0 /* RCTDeviceInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTDeviceInfo.m; sourceTree = "<group>"; };
+		0000000007C0 /* RCTDevSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTDevSettings.h; sourceTree = "<group>"; };
+		0000000007D0 /* RCTDevSettings.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTDevSettings.mm; sourceTree = "<group>"; };
+		0000000007E0 /* RCTEventEmitter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTEventEmitter.h; sourceTree = "<group>"; };
+		0000000007F0 /* RCTEventEmitter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTEventEmitter.m; sourceTree = "<group>"; };
+		000000000800 /* RCTExceptionsManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTExceptionsManager.h; sourceTree = "<group>"; };
+		000000000810 /* RCTExceptionsManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTExceptionsManager.m; sourceTree = "<group>"; };
+		000000000820 /* RCTI18nManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTI18nManager.h; sourceTree = "<group>"; };
+		000000000830 /* RCTI18nManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTI18nManager.m; sourceTree = "<group>"; };
+		000000000840 /* RCTI18nUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTI18nUtil.h; sourceTree = "<group>"; };
+		000000000850 /* RCTI18nUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTI18nUtil.m; sourceTree = "<group>"; };
+		000000000860 /* RCTKeyboardObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTKeyboardObserver.h; sourceTree = "<group>"; };
+		000000000870 /* RCTKeyboardObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTKeyboardObserver.m; sourceTree = "<group>"; };
+		000000000880 /* RCTLayoutAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTLayoutAnimation.h; sourceTree = "<group>"; };
+		000000000890 /* RCTLayoutAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTLayoutAnimation.m; sourceTree = "<group>"; };
+		0000000008A0 /* RCTLayoutAnimationGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTLayoutAnimationGroup.h; sourceTree = "<group>"; };
+		0000000008B0 /* RCTLayoutAnimationGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTLayoutAnimationGroup.m; sourceTree = "<group>"; };
+		0000000008C0 /* RCTRedBox.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTRedBox.h; sourceTree = "<group>"; };
+		0000000008D0 /* RCTRedBox.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTRedBox.m; sourceTree = "<group>"; };
+		0000000008E0 /* RCTRedBoxExtraDataViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTRedBoxExtraDataViewController.h; sourceTree = "<group>"; };
+		0000000008F0 /* RCTRedBoxExtraDataViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTRedBoxExtraDataViewController.m; sourceTree = "<group>"; };
+		000000000900 /* RCTSourceCode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSourceCode.h; sourceTree = "<group>"; };
+		000000000910 /* RCTSourceCode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTSourceCode.m; sourceTree = "<group>"; };
+		000000000920 /* RCTStatusBarManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTStatusBarManager.h; sourceTree = "<group>"; };
+		000000000930 /* RCTStatusBarManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTStatusBarManager.m; sourceTree = "<group>"; };
+		000000000940 /* RCTTiming.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTTiming.h; sourceTree = "<group>"; };
+		000000000950 /* RCTTiming.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTTiming.m; sourceTree = "<group>"; };
+		000000000960 /* RCTUIManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTUIManager.h; sourceTree = "<group>"; };
+		000000000970 /* RCTUIManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTUIManager.m; sourceTree = "<group>"; };
+		000000000980 /* RCTUIManagerObserverCoordinator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTUIManagerObserverCoordinator.h; sourceTree = "<group>"; };
+		000000000990 /* RCTUIManagerObserverCoordinator.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTUIManagerObserverCoordinator.mm; sourceTree = "<group>"; };
+		0000000009A0 /* RCTUIManagerUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTUIManagerUtils.h; sourceTree = "<group>"; };
+		0000000009B0 /* RCTUIManagerUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTUIManagerUtils.m; sourceTree = "<group>"; };
+		0000000009D0 /* RCTFPSGraph.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTFPSGraph.h; sourceTree = "<group>"; };
+		0000000009E0 /* RCTFPSGraph.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTFPSGraph.m; sourceTree = "<group>"; };
+		0000000009F0 /* RCTMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTMacros.h; sourceTree = "<group>"; };
+		000000000A00 /* RCTPerfMonitor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTPerfMonitor.m; sourceTree = "<group>"; };
+		000000000A10 /* RCTProfile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTProfile.h; sourceTree = "<group>"; };
+		000000000A20 /* RCTProfile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTProfile.m; sourceTree = "<group>"; };
+		000000000A30 /* RCTProfileTrampoline-arm.S */ = {isa = PBXFileReference; includeInIndex = 1; path = "RCTProfileTrampoline-arm.S"; sourceTree = "<group>"; };
+		000000000A40 /* RCTProfileTrampoline-arm64.S */ = {isa = PBXFileReference; includeInIndex = 1; path = "RCTProfileTrampoline-arm64.S"; sourceTree = "<group>"; };
+		000000000A50 /* RCTProfileTrampoline-i386.S */ = {isa = PBXFileReference; includeInIndex = 1; path = "RCTProfileTrampoline-i386.S"; sourceTree = "<group>"; };
+		000000000A60 /* RCTProfileTrampoline-x86_64.S */ = {isa = PBXFileReference; includeInIndex = 1; path = "RCTProfileTrampoline-x86_64.S"; sourceTree = "<group>"; };
+		000000000A80 /* RCTUIUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTUIUtils.h; sourceTree = "<group>"; };
+		000000000A90 /* RCTUIUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTUIUtils.m; sourceTree = "<group>"; };
+		000000000AB0 /* RCTActivityIndicatorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTActivityIndicatorView.h; sourceTree = "<group>"; };
+		000000000AC0 /* RCTActivityIndicatorView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTActivityIndicatorView.m; sourceTree = "<group>"; };
+		000000000AD0 /* RCTActivityIndicatorViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTActivityIndicatorViewManager.h; sourceTree = "<group>"; };
+		000000000AE0 /* RCTActivityIndicatorViewManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTActivityIndicatorViewManager.m; sourceTree = "<group>"; };
+		000000000AF0 /* RCTAnimationType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTAnimationType.h; sourceTree = "<group>"; };
+		000000000B00 /* RCTAutoInsetsProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTAutoInsetsProtocol.h; sourceTree = "<group>"; };
+		000000000B10 /* RCTBorderDrawing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTBorderDrawing.h; sourceTree = "<group>"; };
+		000000000B20 /* RCTBorderDrawing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTBorderDrawing.m; sourceTree = "<group>"; };
+		000000000B30 /* RCTBorderStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTBorderStyle.h; sourceTree = "<group>"; };
+		000000000B40 /* RCTComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTComponent.h; sourceTree = "<group>"; };
+		000000000B50 /* RCTComponentData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTComponentData.h; sourceTree = "<group>"; };
+		000000000B60 /* RCTComponentData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTComponentData.m; sourceTree = "<group>"; };
+		000000000B70 /* RCTConvert+CoreLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RCTConvert+CoreLocation.h"; sourceTree = "<group>"; };
+		000000000B80 /* RCTConvert+CoreLocation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RCTConvert+CoreLocation.m"; sourceTree = "<group>"; };
+		000000000B90 /* RCTConvert+Transform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RCTConvert+Transform.h"; sourceTree = "<group>"; };
+		000000000BA0 /* RCTConvert+Transform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RCTConvert+Transform.m"; sourceTree = "<group>"; };
+		000000000BB0 /* RCTDatePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTDatePicker.h; sourceTree = "<group>"; };
+		000000000BC0 /* RCTDatePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTDatePicker.m; sourceTree = "<group>"; };
+		000000000BD0 /* RCTDatePickerManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTDatePickerManager.h; sourceTree = "<group>"; };
+		000000000BE0 /* RCTDatePickerManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTDatePickerManager.m; sourceTree = "<group>"; };
+		000000000BF0 /* RCTFont.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTFont.h; sourceTree = "<group>"; };
+		000000000C00 /* RCTFont.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTFont.mm; sourceTree = "<group>"; };
+		000000000C10 /* RCTLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTLayout.h; sourceTree = "<group>"; };
+		000000000C20 /* RCTLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTLayout.m; sourceTree = "<group>"; };
+		000000000C30 /* RCTMaskedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTMaskedView.h; sourceTree = "<group>"; };
+		000000000C40 /* RCTMaskedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTMaskedView.m; sourceTree = "<group>"; };
+		000000000C50 /* RCTMaskedViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTMaskedViewManager.h; sourceTree = "<group>"; };
+		000000000C60 /* RCTMaskedViewManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTMaskedViewManager.m; sourceTree = "<group>"; };
+		000000000C70 /* RCTModalHostView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTModalHostView.h; sourceTree = "<group>"; };
+		000000000C80 /* RCTModalHostView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTModalHostView.m; sourceTree = "<group>"; };
+		000000000C90 /* RCTModalHostViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTModalHostViewController.h; sourceTree = "<group>"; };
+		000000000CA0 /* RCTModalHostViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTModalHostViewController.m; sourceTree = "<group>"; };
+		000000000CB0 /* RCTModalHostViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTModalHostViewManager.h; sourceTree = "<group>"; };
+		000000000CC0 /* RCTModalHostViewManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTModalHostViewManager.m; sourceTree = "<group>"; };
+		000000000CD0 /* RCTModalManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTModalManager.h; sourceTree = "<group>"; };
+		000000000CE0 /* RCTModalManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTModalManager.m; sourceTree = "<group>"; };
+		000000000CF0 /* RCTPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTPicker.h; sourceTree = "<group>"; };
+		000000000D00 /* RCTPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTPicker.m; sourceTree = "<group>"; };
+		000000000D10 /* RCTPickerManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTPickerManager.h; sourceTree = "<group>"; };
+		000000000D20 /* RCTPickerManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTPickerManager.m; sourceTree = "<group>"; };
+		000000000D30 /* RCTPointerEvents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTPointerEvents.h; sourceTree = "<group>"; };
+		000000000D40 /* RCTProgressViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTProgressViewManager.h; sourceTree = "<group>"; };
+		000000000D50 /* RCTProgressViewManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTProgressViewManager.m; sourceTree = "<group>"; };
+		000000000D60 /* RCTRefreshControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTRefreshControl.h; sourceTree = "<group>"; };
+		000000000D70 /* RCTRefreshControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTRefreshControl.m; sourceTree = "<group>"; };
+		000000000D80 /* RCTRefreshControlManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTRefreshControlManager.h; sourceTree = "<group>"; };
+		000000000D90 /* RCTRefreshControlManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTRefreshControlManager.m; sourceTree = "<group>"; };
+		000000000DA0 /* RCTRootShadowView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTRootShadowView.h; sourceTree = "<group>"; };
+		000000000DB0 /* RCTRootShadowView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTRootShadowView.m; sourceTree = "<group>"; };
+		000000000DC0 /* RCTSegmentedControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSegmentedControl.h; sourceTree = "<group>"; };
+		000000000DD0 /* RCTSegmentedControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTSegmentedControl.m; sourceTree = "<group>"; };
+		000000000DE0 /* RCTSegmentedControlManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSegmentedControlManager.h; sourceTree = "<group>"; };
+		000000000DF0 /* RCTSegmentedControlManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTSegmentedControlManager.m; sourceTree = "<group>"; };
+		000000000E00 /* RCTShadowView+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RCTShadowView+Internal.h"; sourceTree = "<group>"; };
+		000000000E10 /* RCTShadowView+Internal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RCTShadowView+Internal.m"; sourceTree = "<group>"; };
+		000000000E20 /* RCTShadowView+Layout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RCTShadowView+Layout.h"; sourceTree = "<group>"; };
+		000000000E30 /* RCTShadowView+Layout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RCTShadowView+Layout.m"; sourceTree = "<group>"; };
+		000000000E40 /* RCTShadowView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTShadowView.h; sourceTree = "<group>"; };
+		000000000E50 /* RCTShadowView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTShadowView.m; sourceTree = "<group>"; };
+		000000000E60 /* RCTSlider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSlider.h; sourceTree = "<group>"; };
+		000000000E70 /* RCTSlider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTSlider.m; sourceTree = "<group>"; };
+		000000000E80 /* RCTSliderManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSliderManager.h; sourceTree = "<group>"; };
+		000000000E90 /* RCTSliderManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTSliderManager.m; sourceTree = "<group>"; };
+		000000000EA0 /* RCTSwitch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSwitch.h; sourceTree = "<group>"; };
+		000000000EB0 /* RCTSwitch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTSwitch.m; sourceTree = "<group>"; };
+		000000000EC0 /* RCTSwitchManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSwitchManager.h; sourceTree = "<group>"; };
+		000000000ED0 /* RCTSwitchManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTSwitchManager.m; sourceTree = "<group>"; };
+		000000000EE0 /* RCTTextDecorationLineType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTTextDecorationLineType.h; sourceTree = "<group>"; };
+		000000000EF0 /* RCTView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTView.h; sourceTree = "<group>"; };
+		000000000F00 /* RCTView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTView.m; sourceTree = "<group>"; };
+		000000000F10 /* RCTViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTViewManager.h; sourceTree = "<group>"; };
+		000000000F20 /* RCTViewManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTViewManager.m; sourceTree = "<group>"; };
+		000000000F30 /* RCTWebView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTWebView.h; sourceTree = "<group>"; };
+		000000000F40 /* RCTWebView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTWebView.m; sourceTree = "<group>"; };
+		000000000F50 /* RCTWebViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTWebViewManager.h; sourceTree = "<group>"; };
+		000000000F60 /* RCTWebViewManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTWebViewManager.m; sourceTree = "<group>"; };
+		000000000F70 /* RCTWKWebView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTWKWebView.h; sourceTree = "<group>"; };
+		000000000F80 /* RCTWKWebView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTWKWebView.m; sourceTree = "<group>"; };
+		000000000F90 /* RCTWKWebViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTWKWebViewManager.h; sourceTree = "<group>"; };
+		000000000FA0 /* RCTWKWebViewManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTWKWebViewManager.m; sourceTree = "<group>"; };
+		000000000FB0 /* RCTWrapperViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTWrapperViewController.h; sourceTree = "<group>"; };
+		000000000FC0 /* RCTWrapperViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTWrapperViewController.m; sourceTree = "<group>"; };
+		000000000FE0 /* RCTSafeAreaShadowView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSafeAreaShadowView.h; sourceTree = "<group>"; };
+		000000000FF0 /* RCTSafeAreaShadowView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTSafeAreaShadowView.m; sourceTree = "<group>"; };
+		000000001000 /* RCTSafeAreaView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSafeAreaView.h; sourceTree = "<group>"; };
+		000000001010 /* RCTSafeAreaView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTSafeAreaView.m; sourceTree = "<group>"; };
+		000000001020 /* RCTSafeAreaViewLocalData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSafeAreaViewLocalData.h; sourceTree = "<group>"; };
+		000000001030 /* RCTSafeAreaViewLocalData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTSafeAreaViewLocalData.m; sourceTree = "<group>"; };
+		000000001040 /* RCTSafeAreaViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSafeAreaViewManager.h; sourceTree = "<group>"; };
+		000000001050 /* RCTSafeAreaViewManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTSafeAreaViewManager.m; sourceTree = "<group>"; };
+		000000001070 /* RCTScrollableProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTScrollableProtocol.h; sourceTree = "<group>"; };
+		000000001080 /* RCTScrollContentShadowView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTScrollContentShadowView.h; sourceTree = "<group>"; };
+		000000001090 /* RCTScrollContentShadowView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTScrollContentShadowView.m; sourceTree = "<group>"; };
+		0000000010A0 /* RCTScrollContentView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTScrollContentView.h; sourceTree = "<group>"; };
+		0000000010B0 /* RCTScrollContentView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTScrollContentView.m; sourceTree = "<group>"; };
+		0000000010C0 /* RCTScrollContentViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTScrollContentViewManager.h; sourceTree = "<group>"; };
+		0000000010D0 /* RCTScrollContentViewManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTScrollContentViewManager.m; sourceTree = "<group>"; };
+		0000000010E0 /* RCTScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTScrollView.h; sourceTree = "<group>"; };
+		0000000010F0 /* RCTScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTScrollView.m; sourceTree = "<group>"; };
+		000000001100 /* RCTScrollViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTScrollViewManager.h; sourceTree = "<group>"; };
+		000000001110 /* RCTScrollViewManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTScrollViewManager.m; sourceTree = "<group>"; };
+		000000001120 /* UIView+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+Private.h"; sourceTree = "<group>"; };
+		000000001130 /* UIView+React.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+React.h"; sourceTree = "<group>"; };
+		000000001140 /* UIView+React.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+React.m"; sourceTree = "<group>"; };
+		000000001150 /* UIImage+CropRotate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+CropRotate.h"; path = "Objective-C/TOCropViewController/Categories/UIImage+CropRotate.h"; sourceTree = "<group>"; };
+		000000001160 /* UIImage+CropRotate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+CropRotate.m"; path = "Objective-C/TOCropViewController/Categories/UIImage+CropRotate.m"; sourceTree = "<group>"; };
+		000000001170 /* TOCropViewConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropViewConstants.h; path = "Objective-C/TOCropViewController/Constants/TOCropViewConstants.h"; sourceTree = "<group>"; };
+		000000001180 /* TOActivityCroppedImageProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOActivityCroppedImageProvider.h; path = "Objective-C/TOCropViewController/Models/TOActivityCroppedImageProvider.h"; sourceTree = "<group>"; };
+		000000001190 /* TOActivityCroppedImageProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOActivityCroppedImageProvider.m; path = "Objective-C/TOCropViewController/Models/TOActivityCroppedImageProvider.m"; sourceTree = "<group>"; };
+		0000000011A0 /* TOCroppedImageAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCroppedImageAttributes.h; path = "Objective-C/TOCropViewController/Models/TOCroppedImageAttributes.h"; sourceTree = "<group>"; };
+		0000000011B0 /* TOCroppedImageAttributes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCroppedImageAttributes.m; path = "Objective-C/TOCropViewController/Models/TOCroppedImageAttributes.m"; sourceTree = "<group>"; };
+		0000000011C0 /* TOCropViewControllerTransitioning.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropViewControllerTransitioning.h; path = "Objective-C/TOCropViewController/Models/TOCropViewControllerTransitioning.h"; sourceTree = "<group>"; };
+		0000000011D0 /* TOCropViewControllerTransitioning.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropViewControllerTransitioning.m; path = "Objective-C/TOCropViewController/Models/TOCropViewControllerTransitioning.m"; sourceTree = "<group>"; };
+		0000000011E0 /* TOCropViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropViewController.h; path = "Objective-C/TOCropViewController/TOCropViewController.h"; sourceTree = "<group>"; };
+		0000000011F0 /* TOCropViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropViewController.m; path = "Objective-C/TOCropViewController/TOCropViewController.m"; sourceTree = "<group>"; };
+		000000001200 /* TOCropOverlayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropOverlayView.h; path = "Objective-C/TOCropViewController/Views/TOCropOverlayView.h"; sourceTree = "<group>"; };
+		000000001210 /* TOCropOverlayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropOverlayView.m; path = "Objective-C/TOCropViewController/Views/TOCropOverlayView.m"; sourceTree = "<group>"; };
+		000000001220 /* TOCropScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropScrollView.h; path = "Objective-C/TOCropViewController/Views/TOCropScrollView.h"; sourceTree = "<group>"; };
+		000000001230 /* TOCropScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropScrollView.m; path = "Objective-C/TOCropViewController/Views/TOCropScrollView.m"; sourceTree = "<group>"; };
+		000000001240 /* TOCropToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropToolbar.h; path = "Objective-C/TOCropViewController/Views/TOCropToolbar.h"; sourceTree = "<group>"; };
+		000000001250 /* TOCropToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropToolbar.m; path = "Objective-C/TOCropViewController/Views/TOCropToolbar.m"; sourceTree = "<group>"; };
+		000000001260 /* TOCropView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropView.h; path = "Objective-C/TOCropViewController/Views/TOCropView.h"; sourceTree = "<group>"; };
+		000000001270 /* TOCropView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropView.m; path = "Objective-C/TOCropViewController/Views/TOCropView.m"; sourceTree = "<group>"; };
+		000000001280 /* CompactValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CompactValue.h; path = yoga/CompactValue.h; sourceTree = "<group>"; };
+		000000001290 /* instrumentation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = instrumentation.h; path = yoga/instrumentation.h; sourceTree = "<group>"; };
+		0000000012A0 /* Utils.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = Utils.cpp; path = yoga/Utils.cpp; sourceTree = "<group>"; };
+		0000000012B0 /* Utils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Utils.h; path = yoga/Utils.h; sourceTree = "<group>"; };
+		0000000012C0 /* YGConfig.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = YGConfig.cpp; path = yoga/YGConfig.cpp; sourceTree = "<group>"; };
+		0000000012D0 /* YGConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YGConfig.h; path = yoga/YGConfig.h; sourceTree = "<group>"; };
+		0000000012E0 /* YGEnums.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = YGEnums.cpp; path = yoga/YGEnums.cpp; sourceTree = "<group>"; };
+		0000000012F0 /* YGEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YGEnums.h; path = yoga/YGEnums.h; sourceTree = "<group>"; };
+		000000001300 /* YGFloatOptional.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YGFloatOptional.h; path = yoga/YGFloatOptional.h; sourceTree = "<group>"; };
+		000000001310 /* YGLayout.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = YGLayout.cpp; path = yoga/YGLayout.cpp; sourceTree = "<group>"; };
+		000000001320 /* YGLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YGLayout.h; path = yoga/YGLayout.h; sourceTree = "<group>"; };
+		000000001330 /* YGMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YGMacros.h; path = yoga/YGMacros.h; sourceTree = "<group>"; };
+		000000001340 /* YGMarker.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = YGMarker.cpp; path = yoga/YGMarker.cpp; sourceTree = "<group>"; };
+		000000001350 /* YGMarker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YGMarker.h; path = yoga/YGMarker.h; sourceTree = "<group>"; };
+		000000001360 /* YGNode.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = YGNode.cpp; path = yoga/YGNode.cpp; sourceTree = "<group>"; };
+		000000001370 /* YGNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YGNode.h; path = yoga/YGNode.h; sourceTree = "<group>"; };
+		000000001380 /* YGNodePrint.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = YGNodePrint.cpp; path = yoga/YGNodePrint.cpp; sourceTree = "<group>"; };
+		000000001390 /* YGNodePrint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YGNodePrint.h; path = yoga/YGNodePrint.h; sourceTree = "<group>"; };
+		0000000013A0 /* YGStyle.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = YGStyle.cpp; path = yoga/YGStyle.cpp; sourceTree = "<group>"; };
+		0000000013B0 /* YGStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YGStyle.h; path = yoga/YGStyle.h; sourceTree = "<group>"; };
+		0000000013C0 /* YGValue.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = YGValue.cpp; path = yoga/YGValue.cpp; sourceTree = "<group>"; };
+		0000000013D0 /* YGValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YGValue.h; path = yoga/YGValue.h; sourceTree = "<group>"; };
+		0000000013E0 /* Yoga-internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Yoga-internal.h"; path = "yoga/Yoga-internal.h"; sourceTree = "<group>"; };
+		0000000013F0 /* Yoga.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = Yoga.cpp; path = yoga/Yoga.cpp; sourceTree = "<group>"; };
+		000000001400 /* Yoga.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Yoga.h; path = yoga/Yoga.h; sourceTree = "<group>"; };
+		000000001420 /* ar.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ar.lproj; path = "Objective-C/TOCropViewController/Resources/ar.lproj"; sourceTree = "<group>"; };
+		000000001430 /* Base.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = Base.lproj; path = "Objective-C/TOCropViewController/Resources/Base.lproj"; sourceTree = "<group>"; };
+		000000001440 /* da-DK.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "da-DK.lproj"; path = "Objective-C/TOCropViewController/Resources/da-DK.lproj"; sourceTree = "<group>"; };
+		000000001450 /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = de.lproj; path = "Objective-C/TOCropViewController/Resources/de.lproj"; sourceTree = "<group>"; };
+		000000001460 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = "Objective-C/TOCropViewController/Resources/en.lproj"; sourceTree = "<group>"; };
+		000000001470 /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = es.lproj; path = "Objective-C/TOCropViewController/Resources/es.lproj"; sourceTree = "<group>"; };
+		000000001480 /* fa-IR.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "fa-IR.lproj"; path = "Objective-C/TOCropViewController/Resources/fa-IR.lproj"; sourceTree = "<group>"; };
+		000000001490 /* fa.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = fa.lproj; path = "Objective-C/TOCropViewController/Resources/fa.lproj"; sourceTree = "<group>"; };
+		0000000014A0 /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = fr.lproj; path = "Objective-C/TOCropViewController/Resources/fr.lproj"; sourceTree = "<group>"; };
+		0000000014B0 /* hu.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = hu.lproj; path = "Objective-C/TOCropViewController/Resources/hu.lproj"; sourceTree = "<group>"; };
+		0000000014C0 /* id.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = id.lproj; path = "Objective-C/TOCropViewController/Resources/id.lproj"; sourceTree = "<group>"; };
+		0000000014D0 /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = it.lproj; path = "Objective-C/TOCropViewController/Resources/it.lproj"; sourceTree = "<group>"; };
+		0000000014E0 /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ja.lproj; path = "Objective-C/TOCropViewController/Resources/ja.lproj"; sourceTree = "<group>"; };
+		0000000014F0 /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ko.lproj; path = "Objective-C/TOCropViewController/Resources/ko.lproj"; sourceTree = "<group>"; };
+		000000001500 /* ms.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ms.lproj; path = "Objective-C/TOCropViewController/Resources/ms.lproj"; sourceTree = "<group>"; };
+		000000001510 /* nl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = nl.lproj; path = "Objective-C/TOCropViewController/Resources/nl.lproj"; sourceTree = "<group>"; };
+		000000001520 /* pl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = pl.lproj; path = "Objective-C/TOCropViewController/Resources/pl.lproj"; sourceTree = "<group>"; };
+		000000001530 /* pt.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = pt.lproj; path = "Objective-C/TOCropViewController/Resources/pt.lproj"; sourceTree = "<group>"; };
+		000000001540 /* ro.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ro.lproj; path = "Objective-C/TOCropViewController/Resources/ro.lproj"; sourceTree = "<group>"; };
+		000000001550 /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ru.lproj; path = "Objective-C/TOCropViewController/Resources/ru.lproj"; sourceTree = "<group>"; };
+		000000001560 /* tr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = tr.lproj; path = "Objective-C/TOCropViewController/Resources/tr.lproj"; sourceTree = "<group>"; };
+		000000001570 /* vi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = vi.lproj; path = "Objective-C/TOCropViewController/Resources/vi.lproj"; sourceTree = "<group>"; };
+		000000001580 /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hans.lproj"; path = "Objective-C/TOCropViewController/Resources/zh-Hans.lproj"; sourceTree = "<group>"; };
+		000000001590 /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hant.lproj"; path = "Objective-C/TOCropViewController/Resources/zh-Hant.lproj"; sourceTree = "<group>"; };
+		0000000015B0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		0000000015C0 /* RNDynamicCropper.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = RNDynamicCropper.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0000000015E0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		0000000015F0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		000000001600 /* React.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = React.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		000000001620 /* yoga.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = yoga.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		000000001670 /* libRNDynamicCropper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libRNDynamicCropper.a; path = libRNDynamicCropper.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0000000016E0 /* RNDynamicCropper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RNDynamicCropper.xcconfig; sourceTree = "<group>"; };
+		0000000016F0 /* RNDynamicCropper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RNDynamicCropper-prefix.pch"; sourceTree = "<group>"; };
+		000000001700 /* RNDynamicCropper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RNDynamicCropper-dummy.m"; sourceTree = "<group>"; };
+		000000001760 /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libReact.a; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000002750 /* React.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = React.xcconfig; sourceTree = "<group>"; };
+		000000002760 /* React-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "React-prefix.pch"; sourceTree = "<group>"; };
+		000000002770 /* React-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "React-dummy.m"; sourceTree = "<group>"; };
+		0000000027D0 /* libTOCropViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libTOCropViewController.a; path = libTOCropViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000002840 /* TOCropViewControllerBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TOCropViewControllerBundle.bundle; path = "TOCropViewController-TOCropViewControllerBundle.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000002A30 /* ResourceBundle-TOCropViewControllerBundle-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-TOCropViewControllerBundle-Info.plist"; sourceTree = "<group>"; };
+		000000002B80 /* TOCropViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TOCropViewController.xcconfig; sourceTree = "<group>"; };
+		000000002B90 /* TOCropViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TOCropViewController-prefix.pch"; sourceTree = "<group>"; };
+		000000002BA0 /* TOCropViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TOCropViewController-dummy.m"; sourceTree = "<group>"; };
+		000000002C00 /* libyoga.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libyoga.a; path = libyoga.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000002DE0 /* yoga.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = yoga.xcconfig; sourceTree = "<group>"; };
+		000000002DF0 /* yoga-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "yoga-prefix.pch"; sourceTree = "<group>"; };
+		000000002E00 /* yoga-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "yoga-dummy.m"; sourceTree = "<group>"; };
+		000000002E60 /* libPods-artseeapp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-artseeapp.a"; path = "libPods-artseeapp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000002EA0 /* Pods-artseeapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-artseeapp.release.xcconfig"; sourceTree = "<group>"; };
+		000000002EB0 /* Pods-artseeapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-artseeapp.debug.xcconfig"; sourceTree = "<group>"; };
+		000000002EC0 /* Pods-artseeapp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-artseeapp-frameworks.sh"; sourceTree = "<group>"; };
+		000000002ED0 /* Pods-artseeapp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-artseeapp-resources.sh"; sourceTree = "<group>"; };
+		000000002EE0 /* Pods-artseeapp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-artseeapp-acknowledgements.plist"; sourceTree = "<group>"; };
+		000000002EF0 /* Pods-artseeapp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-artseeapp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		000000002F00 /* Pods-artseeapp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-artseeapp-dummy.m"; sourceTree = "<group>"; };
+		000000002F30 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		000000001690 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0000000027F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000002860 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000002C20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000002E80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000000000010 = {
+			isa = PBXGroup;
+			children = (
+				0000000000E0 /* Podfile */,
+				000000000090 /* Development Pods */,
+				000000000060 /* Frameworks */,
+				000000000080 /* Pods */,
+				000000000020 /* Products */,
+				000000000070 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		000000000020 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				000000002E60 /* libPods-artseeapp.a */,
+				000000001760 /* libReact.a */,
+				000000001670 /* libRNDynamicCropper.a */,
+				0000000027D0 /* libTOCropViewController.a */,
+				000000002C00 /* libyoga.a */,
+				000000002840 /* TOCropViewControllerBundle.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		000000000060 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				000000002F20 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		000000000070 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				000000002E90 /* Pods-artseeapp */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		000000000080 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0000000000C0 /* TOCropViewController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		000000000090 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0000000000B0 /* React */,
+				0000000000A0 /* RNDynamicCropper */,
+				0000000000D0 /* yoga */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		0000000000A0 /* RNDynamicCropper */ = {
+			isa = PBXGroup;
+			children = (
+				0000000000F0 /* RNDynamicCropper.h */,
+				000000000100 /* RNDynamicCropper.m */,
+				0000000015A0 /* Pod */,
+				0000000016D0 /* Support Files */,
+			);
+			name = RNDynamicCropper;
+			path = "../../node_modules/react-native-dynamic-cropper";
+			sourceTree = "<group>";
+		};
+		0000000000B0 /* React */ = {
+			isa = PBXGroup;
+			children = (
+				000000000110 /* Core */,
+				0000000015D0 /* Pod */,
+				000000002740 /* Support Files */,
+			);
+			name = React;
+			path = "../../node_modules/react-native";
+			sourceTree = "<group>";
+		};
+		0000000000C0 /* TOCropViewController */ = {
+			isa = PBXGroup;
+			children = (
+				000000001180 /* TOActivityCroppedImageProvider.h */,
+				000000001190 /* TOActivityCroppedImageProvider.m */,
+				000000001200 /* TOCropOverlayView.h */,
+				000000001210 /* TOCropOverlayView.m */,
+				0000000011A0 /* TOCroppedImageAttributes.h */,
+				0000000011B0 /* TOCroppedImageAttributes.m */,
+				000000001220 /* TOCropScrollView.h */,
+				000000001230 /* TOCropScrollView.m */,
+				000000001240 /* TOCropToolbar.h */,
+				000000001250 /* TOCropToolbar.m */,
+				000000001260 /* TOCropView.h */,
+				000000001270 /* TOCropView.m */,
+				000000001170 /* TOCropViewConstants.h */,
+				0000000011E0 /* TOCropViewController.h */,
+				0000000011F0 /* TOCropViewController.m */,
+				0000000011C0 /* TOCropViewControllerTransitioning.h */,
+				0000000011D0 /* TOCropViewControllerTransitioning.m */,
+				000000001150 /* UIImage+CropRotate.h */,
+				000000001160 /* UIImage+CropRotate.m */,
+				000000001410 /* Resources */,
+				000000002A20 /* Support Files */,
+			);
+			name = TOCropViewController;
+			path = TOCropViewController;
+			sourceTree = "<group>";
+		};
+		0000000000D0 /* yoga */ = {
+			isa = PBXGroup;
+			children = (
+				000000001280 /* CompactValue.h */,
+				000000001290 /* instrumentation.h */,
+				0000000012A0 /* Utils.cpp */,
+				0000000012B0 /* Utils.h */,
+				0000000012C0 /* YGConfig.cpp */,
+				0000000012D0 /* YGConfig.h */,
+				0000000012E0 /* YGEnums.cpp */,
+				0000000012F0 /* YGEnums.h */,
+				000000001300 /* YGFloatOptional.h */,
+				000000001310 /* YGLayout.cpp */,
+				000000001320 /* YGLayout.h */,
+				000000001330 /* YGMacros.h */,
+				000000001340 /* YGMarker.cpp */,
+				000000001350 /* YGMarker.h */,
+				000000001360 /* YGNode.cpp */,
+				000000001370 /* YGNode.h */,
+				000000001380 /* YGNodePrint.cpp */,
+				000000001390 /* YGNodePrint.h */,
+				0000000013A0 /* YGStyle.cpp */,
+				0000000013B0 /* YGStyle.h */,
+				0000000013C0 /* YGValue.cpp */,
+				0000000013D0 /* YGValue.h */,
+				0000000013F0 /* Yoga.cpp */,
+				000000001400 /* Yoga.h */,
+				0000000013E0 /* Yoga-internal.h */,
+				000000001610 /* Pod */,
+				000000002DD0 /* Support Files */,
+			);
+			name = yoga;
+			path = "../../node_modules/react-native/ReactCommon/yoga";
+			sourceTree = "<group>";
+		};
+		000000000110 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				000000000120 /* Base */,
+				0000000006F0 /* Modules */,
+				0000000009C0 /* Profiler */,
+				000000000A70 /* UIUtils */,
+				000000000AA0 /* Views */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		000000000120 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				000000000130 /* RCTAssert.h */,
+				000000000140 /* RCTAssert.m */,
+				000000000160 /* RCTBridge.h */,
+				000000000170 /* RCTBridge.m */,
+				000000000150 /* RCTBridge+Private.h */,
+				000000000180 /* RCTBridgeDelegate.h */,
+				000000000190 /* RCTBridgeMethod.h */,
+				0000000001A0 /* RCTBridgeModule.h */,
+				0000000001B0 /* RCTBundleURLProvider.h */,
+				0000000001C0 /* RCTBundleURLProvider.m */,
+				0000000001D0 /* RCTConvert.h */,
+				0000000001E0 /* RCTConvert.m */,
+				0000000001F0 /* RCTCxxConvert.h */,
+				000000000200 /* RCTCxxConvert.m */,
+				000000000210 /* RCTDefines.h */,
+				000000000220 /* RCTDisplayLink.h */,
+				000000000230 /* RCTDisplayLink.m */,
+				000000000240 /* RCTErrorCustomizer.h */,
+				000000000250 /* RCTErrorInfo.h */,
+				000000000260 /* RCTErrorInfo.m */,
+				000000000270 /* RCTEventDispatcher.h */,
+				000000000280 /* RCTEventDispatcher.m */,
+				000000000290 /* RCTFrameUpdate.h */,
+				0000000002A0 /* RCTFrameUpdate.m */,
+				0000000002B0 /* RCTImageSource.h */,
+				0000000002C0 /* RCTImageSource.m */,
+				0000000002D0 /* RCTInvalidating.h */,
+				0000000002E0 /* RCTJavaScriptExecutor.h */,
+				0000000002F0 /* RCTJavaScriptLoader.h */,
+				000000000300 /* RCTJavaScriptLoader.mm */,
+				000000000310 /* RCTJSStackFrame.h */,
+				000000000320 /* RCTJSStackFrame.m */,
+				000000000330 /* RCTKeyCommands.h */,
+				000000000340 /* RCTKeyCommands.m */,
+				000000000350 /* RCTLog.h */,
+				000000000360 /* RCTLog.mm */,
+				000000000370 /* RCTManagedPointer.h */,
+				000000000380 /* RCTManagedPointer.mm */,
+				000000000390 /* RCTModuleData.h */,
+				0000000003A0 /* RCTModuleData.mm */,
+				0000000003B0 /* RCTModuleMethod.h */,
+				0000000003C0 /* RCTModuleMethod.mm */,
+				0000000003D0 /* RCTMultipartDataTask.h */,
+				0000000003E0 /* RCTMultipartDataTask.m */,
+				0000000003F0 /* RCTMultipartStreamReader.h */,
+				000000000400 /* RCTMultipartStreamReader.m */,
+				000000000410 /* RCTNullability.h */,
+				000000000420 /* RCTParserUtils.h */,
+				000000000430 /* RCTParserUtils.m */,
+				000000000440 /* RCTPerformanceLogger.h */,
+				000000000450 /* RCTPerformanceLogger.m */,
+				000000000460 /* RCTPlatform.h */,
+				000000000470 /* RCTPlatform.m */,
+				000000000480 /* RCTReloadCommand.h */,
+				000000000490 /* RCTReloadCommand.m */,
+				0000000004A0 /* RCTRootContentView.h */,
+				0000000004B0 /* RCTRootContentView.m */,
+				0000000004C0 /* RCTRootView.h */,
+				0000000004D0 /* RCTRootView.m */,
+				0000000004E0 /* RCTRootViewDelegate.h */,
+				0000000004F0 /* RCTRootViewInternal.h */,
+				000000000500 /* RCTTouchEvent.h */,
+				000000000510 /* RCTTouchEvent.m */,
+				000000000520 /* RCTTouchHandler.h */,
+				000000000530 /* RCTTouchHandler.m */,
+				000000000540 /* RCTURLRequestDelegate.h */,
+				000000000550 /* RCTURLRequestHandler.h */,
+				000000000560 /* RCTUtils.h */,
+				000000000570 /* RCTUtils.m */,
+				000000000580 /* RCTVersion.h */,
+				000000000590 /* RCTVersion.m */,
+				0000000005A0 /* Surface */,
+			);
+			name = Base;
+			path = React/Base;
+			sourceTree = "<group>";
+		};
+		0000000005A0 /* Surface */ = {
+			isa = PBXGroup;
+			children = (
+				0000000005B0 /* RCTSurface.h */,
+				0000000005C0 /* RCTSurface.mm */,
+				0000000005D0 /* RCTSurfaceDelegate.h */,
+				0000000005E0 /* RCTSurfaceRootShadowView.h */,
+				0000000005F0 /* RCTSurfaceRootShadowView.m */,
+				000000000600 /* RCTSurfaceRootShadowViewDelegate.h */,
+				000000000610 /* RCTSurfaceRootView.h */,
+				000000000620 /* RCTSurfaceRootView.mm */,
+				000000000630 /* RCTSurfaceStage.h */,
+				000000000640 /* RCTSurfaceStage.m */,
+				000000000660 /* RCTSurfaceView.h */,
+				000000000670 /* RCTSurfaceView.mm */,
+				000000000650 /* RCTSurfaceView+Internal.h */,
+				000000000680 /* SurfaceHostingView */,
+			);
+			name = Surface;
+			path = Surface;
+			sourceTree = "<group>";
+		};
+		000000000680 /* SurfaceHostingView */ = {
+			isa = PBXGroup;
+			children = (
+				000000000690 /* RCTSurfaceHostingProxyRootView.h */,
+				0000000006A0 /* RCTSurfaceHostingProxyRootView.mm */,
+				0000000006B0 /* RCTSurfaceHostingView.h */,
+				0000000006C0 /* RCTSurfaceHostingView.mm */,
+				0000000006D0 /* RCTSurfaceSizeMeasureMode.h */,
+				0000000006E0 /* RCTSurfaceSizeMeasureMode.mm */,
+			);
+			name = SurfaceHostingView;
+			path = SurfaceHostingView;
+			sourceTree = "<group>";
+		};
+		0000000006F0 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				000000000700 /* RCTAccessibilityManager.h */,
+				000000000710 /* RCTAccessibilityManager.m */,
+				000000000720 /* RCTAlertManager.h */,
+				000000000730 /* RCTAlertManager.m */,
+				000000000740 /* RCTAppState.h */,
+				000000000750 /* RCTAppState.m */,
+				000000000760 /* RCTAsyncLocalStorage.h */,
+				000000000770 /* RCTAsyncLocalStorage.m */,
+				000000000780 /* RCTClipboard.h */,
+				000000000790 /* RCTClipboard.m */,
+				0000000007A0 /* RCTDeviceInfo.h */,
+				0000000007B0 /* RCTDeviceInfo.m */,
+				0000000007C0 /* RCTDevSettings.h */,
+				0000000007D0 /* RCTDevSettings.mm */,
+				0000000007E0 /* RCTEventEmitter.h */,
+				0000000007F0 /* RCTEventEmitter.m */,
+				000000000800 /* RCTExceptionsManager.h */,
+				000000000810 /* RCTExceptionsManager.m */,
+				000000000820 /* RCTI18nManager.h */,
+				000000000830 /* RCTI18nManager.m */,
+				000000000840 /* RCTI18nUtil.h */,
+				000000000850 /* RCTI18nUtil.m */,
+				000000000860 /* RCTKeyboardObserver.h */,
+				000000000870 /* RCTKeyboardObserver.m */,
+				000000000880 /* RCTLayoutAnimation.h */,
+				000000000890 /* RCTLayoutAnimation.m */,
+				0000000008A0 /* RCTLayoutAnimationGroup.h */,
+				0000000008B0 /* RCTLayoutAnimationGroup.m */,
+				0000000008C0 /* RCTRedBox.h */,
+				0000000008D0 /* RCTRedBox.m */,
+				0000000008E0 /* RCTRedBoxExtraDataViewController.h */,
+				0000000008F0 /* RCTRedBoxExtraDataViewController.m */,
+				000000000900 /* RCTSourceCode.h */,
+				000000000910 /* RCTSourceCode.m */,
+				000000000920 /* RCTStatusBarManager.h */,
+				000000000930 /* RCTStatusBarManager.m */,
+				000000000940 /* RCTTiming.h */,
+				000000000950 /* RCTTiming.m */,
+				000000000960 /* RCTUIManager.h */,
+				000000000970 /* RCTUIManager.m */,
+				000000000980 /* RCTUIManagerObserverCoordinator.h */,
+				000000000990 /* RCTUIManagerObserverCoordinator.mm */,
+				0000000009A0 /* RCTUIManagerUtils.h */,
+				0000000009B0 /* RCTUIManagerUtils.m */,
+			);
+			name = Modules;
+			path = React/Modules;
+			sourceTree = "<group>";
+		};
+		0000000009C0 /* Profiler */ = {
+			isa = PBXGroup;
+			children = (
+				0000000009D0 /* RCTFPSGraph.h */,
+				0000000009E0 /* RCTFPSGraph.m */,
+				0000000009F0 /* RCTMacros.h */,
+				000000000A00 /* RCTPerfMonitor.m */,
+				000000000A10 /* RCTProfile.h */,
+				000000000A20 /* RCTProfile.m */,
+				000000000A30 /* RCTProfileTrampoline-arm.S */,
+				000000000A40 /* RCTProfileTrampoline-arm64.S */,
+				000000000A50 /* RCTProfileTrampoline-i386.S */,
+				000000000A60 /* RCTProfileTrampoline-x86_64.S */,
+			);
+			name = Profiler;
+			path = React/Profiler;
+			sourceTree = "<group>";
+		};
+		000000000A70 /* UIUtils */ = {
+			isa = PBXGroup;
+			children = (
+				000000000A80 /* RCTUIUtils.h */,
+				000000000A90 /* RCTUIUtils.m */,
+			);
+			name = UIUtils;
+			path = React/UIUtils;
+			sourceTree = "<group>";
+		};
+		000000000AA0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				000000000AB0 /* RCTActivityIndicatorView.h */,
+				000000000AC0 /* RCTActivityIndicatorView.m */,
+				000000000AD0 /* RCTActivityIndicatorViewManager.h */,
+				000000000AE0 /* RCTActivityIndicatorViewManager.m */,
+				000000000AF0 /* RCTAnimationType.h */,
+				000000000B00 /* RCTAutoInsetsProtocol.h */,
+				000000000B10 /* RCTBorderDrawing.h */,
+				000000000B20 /* RCTBorderDrawing.m */,
+				000000000B30 /* RCTBorderStyle.h */,
+				000000000B40 /* RCTComponent.h */,
+				000000000B50 /* RCTComponentData.h */,
+				000000000B60 /* RCTComponentData.m */,
+				000000000B70 /* RCTConvert+CoreLocation.h */,
+				000000000B80 /* RCTConvert+CoreLocation.m */,
+				000000000B90 /* RCTConvert+Transform.h */,
+				000000000BA0 /* RCTConvert+Transform.m */,
+				000000000BB0 /* RCTDatePicker.h */,
+				000000000BC0 /* RCTDatePicker.m */,
+				000000000BD0 /* RCTDatePickerManager.h */,
+				000000000BE0 /* RCTDatePickerManager.m */,
+				000000000BF0 /* RCTFont.h */,
+				000000000C00 /* RCTFont.mm */,
+				000000000C10 /* RCTLayout.h */,
+				000000000C20 /* RCTLayout.m */,
+				000000000C30 /* RCTMaskedView.h */,
+				000000000C40 /* RCTMaskedView.m */,
+				000000000C50 /* RCTMaskedViewManager.h */,
+				000000000C60 /* RCTMaskedViewManager.m */,
+				000000000C70 /* RCTModalHostView.h */,
+				000000000C80 /* RCTModalHostView.m */,
+				000000000C90 /* RCTModalHostViewController.h */,
+				000000000CA0 /* RCTModalHostViewController.m */,
+				000000000CB0 /* RCTModalHostViewManager.h */,
+				000000000CC0 /* RCTModalHostViewManager.m */,
+				000000000CD0 /* RCTModalManager.h */,
+				000000000CE0 /* RCTModalManager.m */,
+				000000000CF0 /* RCTPicker.h */,
+				000000000D00 /* RCTPicker.m */,
+				000000000D10 /* RCTPickerManager.h */,
+				000000000D20 /* RCTPickerManager.m */,
+				000000000D30 /* RCTPointerEvents.h */,
+				000000000D40 /* RCTProgressViewManager.h */,
+				000000000D50 /* RCTProgressViewManager.m */,
+				000000000D60 /* RCTRefreshControl.h */,
+				000000000D70 /* RCTRefreshControl.m */,
+				000000000D80 /* RCTRefreshControlManager.h */,
+				000000000D90 /* RCTRefreshControlManager.m */,
+				000000000DA0 /* RCTRootShadowView.h */,
+				000000000DB0 /* RCTRootShadowView.m */,
+				000000000DC0 /* RCTSegmentedControl.h */,
+				000000000DD0 /* RCTSegmentedControl.m */,
+				000000000DE0 /* RCTSegmentedControlManager.h */,
+				000000000DF0 /* RCTSegmentedControlManager.m */,
+				000000000E40 /* RCTShadowView.h */,
+				000000000E50 /* RCTShadowView.m */,
+				000000000E00 /* RCTShadowView+Internal.h */,
+				000000000E10 /* RCTShadowView+Internal.m */,
+				000000000E20 /* RCTShadowView+Layout.h */,
+				000000000E30 /* RCTShadowView+Layout.m */,
+				000000000E60 /* RCTSlider.h */,
+				000000000E70 /* RCTSlider.m */,
+				000000000E80 /* RCTSliderManager.h */,
+				000000000E90 /* RCTSliderManager.m */,
+				000000000EA0 /* RCTSwitch.h */,
+				000000000EB0 /* RCTSwitch.m */,
+				000000000EC0 /* RCTSwitchManager.h */,
+				000000000ED0 /* RCTSwitchManager.m */,
+				000000000EE0 /* RCTTextDecorationLineType.h */,
+				000000000EF0 /* RCTView.h */,
+				000000000F00 /* RCTView.m */,
+				000000000F10 /* RCTViewManager.h */,
+				000000000F20 /* RCTViewManager.m */,
+				000000000F30 /* RCTWebView.h */,
+				000000000F40 /* RCTWebView.m */,
+				000000000F50 /* RCTWebViewManager.h */,
+				000000000F60 /* RCTWebViewManager.m */,
+				000000000F70 /* RCTWKWebView.h */,
+				000000000F80 /* RCTWKWebView.m */,
+				000000000F90 /* RCTWKWebViewManager.h */,
+				000000000FA0 /* RCTWKWebViewManager.m */,
+				000000000FB0 /* RCTWrapperViewController.h */,
+				000000000FC0 /* RCTWrapperViewController.m */,
+				000000001120 /* UIView+Private.h */,
+				000000001130 /* UIView+React.h */,
+				000000001140 /* UIView+React.m */,
+				000000000FD0 /* SafeAreaView */,
+				000000001060 /* ScrollView */,
+			);
+			name = Views;
+			path = React/Views;
+			sourceTree = "<group>";
+		};
+		000000000FD0 /* SafeAreaView */ = {
+			isa = PBXGroup;
+			children = (
+				000000000FE0 /* RCTSafeAreaShadowView.h */,
+				000000000FF0 /* RCTSafeAreaShadowView.m */,
+				000000001000 /* RCTSafeAreaView.h */,
+				000000001010 /* RCTSafeAreaView.m */,
+				000000001020 /* RCTSafeAreaViewLocalData.h */,
+				000000001030 /* RCTSafeAreaViewLocalData.m */,
+				000000001040 /* RCTSafeAreaViewManager.h */,
+				000000001050 /* RCTSafeAreaViewManager.m */,
+			);
+			name = SafeAreaView;
+			path = SafeAreaView;
+			sourceTree = "<group>";
+		};
+		000000001060 /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				000000001070 /* RCTScrollableProtocol.h */,
+				000000001080 /* RCTScrollContentShadowView.h */,
+				000000001090 /* RCTScrollContentShadowView.m */,
+				0000000010A0 /* RCTScrollContentView.h */,
+				0000000010B0 /* RCTScrollContentView.m */,
+				0000000010C0 /* RCTScrollContentViewManager.h */,
+				0000000010D0 /* RCTScrollContentViewManager.m */,
+				0000000010E0 /* RCTScrollView.h */,
+				0000000010F0 /* RCTScrollView.m */,
+				000000001100 /* RCTScrollViewManager.h */,
+				000000001110 /* RCTScrollViewManager.m */,
+			);
+			name = ScrollView;
+			path = ScrollView;
+			sourceTree = "<group>";
+		};
+		000000001410 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				000000001420 /* ar.lproj */,
+				000000001430 /* Base.lproj */,
+				000000001440 /* da-DK.lproj */,
+				000000001450 /* de.lproj */,
+				000000001460 /* en.lproj */,
+				000000001470 /* es.lproj */,
+				000000001490 /* fa.lproj */,
+				000000001480 /* fa-IR.lproj */,
+				0000000014A0 /* fr.lproj */,
+				0000000014B0 /* hu.lproj */,
+				0000000014C0 /* id.lproj */,
+				0000000014D0 /* it.lproj */,
+				0000000014E0 /* ja.lproj */,
+				0000000014F0 /* ko.lproj */,
+				000000001500 /* ms.lproj */,
+				000000001510 /* nl.lproj */,
+				000000001520 /* pl.lproj */,
+				000000001530 /* pt.lproj */,
+				000000001540 /* ro.lproj */,
+				000000001550 /* ru.lproj */,
+				000000001560 /* tr.lproj */,
+				000000001570 /* vi.lproj */,
+				000000001580 /* zh-Hans.lproj */,
+				000000001590 /* zh-Hant.lproj */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		0000000015A0 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				0000000015B0 /* README.md */,
+				0000000015C0 /* RNDynamicCropper.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		0000000015D0 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				0000000015E0 /* LICENSE */,
+				000000001600 /* React.podspec */,
+				0000000015F0 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		000000001610 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				000000001620 /* yoga.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		0000000016D0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0000000016E0 /* RNDynamicCropper.xcconfig */,
+				000000001700 /* RNDynamicCropper-dummy.m */,
+				0000000016F0 /* RNDynamicCropper-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../../ios/Pods/Target Support Files/RNDynamicCropper";
+			sourceTree = "<group>";
+		};
+		000000002740 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				000000002750 /* React.xcconfig */,
+				000000002770 /* React-dummy.m */,
+				000000002760 /* React-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../../ios/Pods/Target Support Files/React";
+			sourceTree = "<group>";
+		};
+		000000002A20 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				000000002A30 /* ResourceBundle-TOCropViewControllerBundle-Info.plist */,
+				000000002B80 /* TOCropViewController.xcconfig */,
+				000000002BA0 /* TOCropViewController-dummy.m */,
+				000000002B90 /* TOCropViewController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TOCropViewController";
+			sourceTree = "<group>";
+		};
+		000000002DD0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				000000002DE0 /* yoga.xcconfig */,
+				000000002E00 /* yoga-dummy.m */,
+				000000002DF0 /* yoga-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../../../../ios/Pods/Target Support Files/yoga";
+			sourceTree = "<group>";
+		};
+		000000002E90 /* Pods-artseeapp */ = {
+			isa = PBXGroup;
+			children = (
+				000000002EF0 /* Pods-artseeapp-acknowledgements.markdown */,
+				000000002EE0 /* Pods-artseeapp-acknowledgements.plist */,
+				000000002F00 /* Pods-artseeapp-dummy.m */,
+				000000002EC0 /* Pods-artseeapp-frameworks.sh */,
+				000000002ED0 /* Pods-artseeapp-resources.sh */,
+				000000002EB0 /* Pods-artseeapp.debug.xcconfig */,
+				000000002EA0 /* Pods-artseeapp.release.xcconfig */,
+			);
+			name = "Pods-artseeapp";
+			path = "Target Support Files/Pods-artseeapp";
+			sourceTree = "<group>";
+		};
+		000000002F20 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				000000002F30 /* JavaScriptCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0000000016B0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0000000016C0 /* RNDynamicCropper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000002AD0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000002B00 /* TOActivityCroppedImageProvider.h in Headers */,
+				000000002B40 /* TOCropOverlayView.h in Headers */,
+				000000002B10 /* TOCroppedImageAttributes.h in Headers */,
+				000000002B50 /* TOCropScrollView.h in Headers */,
+				000000002B60 /* TOCropToolbar.h in Headers */,
+				000000002B70 /* TOCropView.h in Headers */,
+				000000002AF0 /* TOCropViewConstants.h in Headers */,
+				000000002B30 /* TOCropViewController.h in Headers */,
+				000000002B20 /* TOCropViewControllerTransitioning.h in Headers */,
+				000000002AE0 /* UIImage+CropRotate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000002CD0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000002CE0 /* CompactValue.h in Headers */,
+				000000002CF0 /* instrumentation.h in Headers */,
+				000000002D00 /* Utils.h in Headers */,
+				000000002D10 /* YGConfig.h in Headers */,
+				000000002D20 /* YGEnums.h in Headers */,
+				000000002D30 /* YGFloatOptional.h in Headers */,
+				000000002D40 /* YGLayout.h in Headers */,
+				000000002D50 /* YGMacros.h in Headers */,
+				000000002D60 /* YGMarker.h in Headers */,
+				000000002D70 /* YGNode.h in Headers */,
+				000000002D80 /* YGNodePrint.h in Headers */,
+				000000002D90 /* YGStyle.h in Headers */,
+				000000002DA0 /* YGValue.h in Headers */,
+				000000002DB0 /* Yoga-internal.h in Headers */,
+				000000002DC0 /* Yoga.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		000000001630 /* RNDynamicCropper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000001640 /* Build configuration list for PBXNativeTarget "RNDynamicCropper" */;
+			buildPhases = (
+				000000001680 /* Sources */,
+				000000001690 /* Frameworks */,
+				0000000016B0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				000000002F80 /* PBXTargetDependency */,
+				000000002FA0 /* PBXTargetDependency */,
+			);
+			name = RNDynamicCropper;
+			productName = RNDynamicCropper;
+			productReference = 000000001670 /* libRNDynamicCropper.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		000000002790 /* TOCropViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0000000027A0 /* Build configuration list for PBXNativeTarget "TOCropViewController" */;
+			buildPhases = (
+				0000000027E0 /* Sources */,
+				0000000027F0 /* Frameworks */,
+				000000002AD0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				000000002A10 /* PBXTargetDependency */,
+			);
+			name = TOCropViewController;
+			productName = TOCropViewController;
+			productReference = 0000000027D0 /* libTOCropViewController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		000000002800 /* TOCropViewController-TOCropViewControllerBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000002810 /* Build configuration list for PBXNativeTarget "TOCropViewController-TOCropViewControllerBundle" */;
+			buildPhases = (
+				000000002850 /* Sources */,
+				000000002860 /* Frameworks */,
+				000000002870 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TOCropViewController-TOCropViewControllerBundle";
+			productName = "TOCropViewController-TOCropViewControllerBundle";
+			productReference = 000000002840 /* TOCropViewControllerBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		000000002BC0 /* yoga */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000002BD0 /* Build configuration list for PBXNativeTarget "yoga" */;
+			buildPhases = (
+				000000002C10 /* Sources */,
+				000000002C20 /* Frameworks */,
+				000000002CD0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = yoga;
+			productName = yoga;
+			productReference = 000000002C00 /* libyoga.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		000000002E20 /* Pods-artseeapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000002E30 /* Build configuration list for PBXNativeTarget "Pods-artseeapp" */;
+			buildPhases = (
+				000000002E70 /* Sources */,
+				000000002E80 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				000000002F60 /* PBXTargetDependency */,
+				000000002FC0 /* PBXTargetDependency */,
+				000000003000 /* PBXTargetDependency */,
+				000000003020 /* PBXTargetDependency */,
+			);
+			name = "Pods-artseeapp";
+			productName = "Pods-artseeapp";
+			productReference = 000000002E60 /* libPods-artseeapp.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		000000000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 000000000030 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 000000000010;
+			productRefGroup = 000000000020 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				000000002E20 /* Pods-artseeapp */,
+				000000001630 /* RNDynamicCropper */,
+				000000002790 /* TOCropViewController */,
+				000000002800 /* TOCropViewController-TOCropViewControllerBundle */,
+				000000002BC0 /* yoga */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		000000002870 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000002880 /* ar.lproj in Resources */,
+				000000002890 /* Base.lproj in Resources */,
+				0000000028A0 /* da-DK.lproj in Resources */,
+				0000000028B0 /* de.lproj in Resources */,
+				0000000028C0 /* en.lproj in Resources */,
+				0000000028D0 /* es.lproj in Resources */,
+				0000000028E0 /* fa-IR.lproj in Resources */,
+				0000000028F0 /* fa.lproj in Resources */,
+				000000002900 /* fr.lproj in Resources */,
+				000000002910 /* hu.lproj in Resources */,
+				000000002920 /* id.lproj in Resources */,
+				000000002930 /* it.lproj in Resources */,
+				000000002940 /* ja.lproj in Resources */,
+				000000002950 /* ko.lproj in Resources */,
+				000000002960 /* ms.lproj in Resources */,
+				000000002970 /* nl.lproj in Resources */,
+				000000002980 /* pl.lproj in Resources */,
+				000000002990 /* pt.lproj in Resources */,
+				0000000029A0 /* ro.lproj in Resources */,
+				0000000029B0 /* ru.lproj in Resources */,
+				0000000029C0 /* tr.lproj in Resources */,
+				0000000029D0 /* vi.lproj in Resources */,
+				0000000029E0 /* zh-Hans.lproj in Resources */,
+				0000000029F0 /* zh-Hant.lproj in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		000000001680 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000001710 /* RNDynamicCropper-dummy.m in Sources */,
+				0000000016A0 /* RNDynamicCropper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0000000027E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000002A50 /* TOActivityCroppedImageProvider.m in Sources */,
+				000000002A90 /* TOCropOverlayView.m in Sources */,
+				000000002A60 /* TOCroppedImageAttributes.m in Sources */,
+				000000002AA0 /* TOCropScrollView.m in Sources */,
+				000000002AB0 /* TOCropToolbar.m in Sources */,
+				000000002AC0 /* TOCropView.m in Sources */,
+				000000002BB0 /* TOCropViewController-dummy.m in Sources */,
+				000000002A80 /* TOCropViewController.m in Sources */,
+				000000002A70 /* TOCropViewControllerTransitioning.m in Sources */,
+				000000002A40 /* UIImage+CropRotate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000002850 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000002C10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000002C30 /* Utils.cpp in Sources */,
+				000000002C40 /* YGConfig.cpp in Sources */,
+				000000002C50 /* YGEnums.cpp in Sources */,
+				000000002C60 /* YGLayout.cpp in Sources */,
+				000000002C70 /* YGMarker.cpp in Sources */,
+				000000002C80 /* YGNode.cpp in Sources */,
+				000000002C90 /* YGNodePrint.cpp in Sources */,
+				000000002CA0 /* YGStyle.cpp in Sources */,
+				000000002CB0 /* YGValue.cpp in Sources */,
+				000000002E10 /* yoga-dummy.m in Sources */,
+				000000002CC0 /* Yoga.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000002E70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000002F10 /* Pods-artseeapp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		000000002A10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "TOCropViewController-TOCropViewControllerBundle";
+			target = 000000002800 /* TOCropViewController-TOCropViewControllerBundle */;
+			targetProxy = 000000002A00 /* PBXContainerItemProxy */;
+		};
+		000000002F60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RNDynamicCropper;
+			target = 000000001630 /* RNDynamicCropper */;
+			targetProxy = 000000002F50 /* PBXContainerItemProxy */;
+		};
+		000000002F80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = React;
+			targetProxy = 000000002F70 /* PBXContainerItemProxy */;
+		};
+		000000002FA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TOCropViewController;
+			target = 000000002790 /* TOCropViewController */;
+			targetProxy = 000000002F90 /* PBXContainerItemProxy */;
+		};
+		000000002FC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = React;
+			targetProxy = 000000002FB0 /* PBXContainerItemProxy */;
+		};
+		000000003000 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TOCropViewController;
+			target = 000000002790 /* TOCropViewController */;
+			targetProxy = 000000002FF0 /* PBXContainerItemProxy */;
+		};
+		000000003020 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = yoga;
+			target = 000000002BC0 /* yoga */;
+			targetProxy = 000000003010 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		000000000040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		000000000050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		000000001650 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0000000016E0 /* RNDynamicCropper.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/RNDynamicCropper/RNDynamicCropper-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = RNDynamicCropper;
+				PRODUCT_NAME = RNDynamicCropper;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		000000001660 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0000000016E0 /* RNDynamicCropper.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/RNDynamicCropper/RNDynamicCropper-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = RNDynamicCropper;
+				PRODUCT_NAME = RNDynamicCropper;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		000000001740 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000000002750 /* React.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/React/React-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = React;
+				PRODUCT_NAME = React;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		000000001750 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000000002750 /* React.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/React/React-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = React;
+				PRODUCT_NAME = React;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0000000027B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000000002B80 /* TOCropViewController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/TOCropViewController/TOCropViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = TOCropViewController;
+				PRODUCT_NAME = TOCropViewController;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0000000027C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000000002B80 /* TOCropViewController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/TOCropViewController/TOCropViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = TOCropViewController;
+				PRODUCT_NAME = TOCropViewController;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		000000002820 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000000002B80 /* TOCropViewController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TOCropViewController";
+				INFOPLIST_FILE = "Target Support Files/TOCropViewController/ResourceBundle-TOCropViewControllerBundle-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = TOCropViewControllerBundle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		000000002830 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000000002B80 /* TOCropViewController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TOCropViewController";
+				INFOPLIST_FILE = "Target Support Files/TOCropViewController/ResourceBundle-TOCropViewControllerBundle-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = TOCropViewControllerBundle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		000000002BE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000000002DE0 /* yoga.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/yoga/yoga-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = yoga;
+				PRODUCT_NAME = yoga;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		000000002BF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000000002DE0 /* yoga.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/yoga/yoga-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = yoga;
+				PRODUCT_NAME = yoga;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		000000002E40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000000002EA0 /* Pods-artseeapp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		000000002E50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000000002EB0 /* Pods-artseeapp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		000000000030 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000040 /* Debug */,
+				000000000050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000000001640 /* Build configuration list for PBXNativeTarget "RNDynamicCropper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000001660 /* Debug */,
+				000000001650 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0000000027A0 /* Build configuration list for PBXNativeTarget "TOCropViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0000000027C0 /* Debug */,
+				0000000027B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000000002810 /* Build configuration list for PBXNativeTarget "TOCropViewController-TOCropViewControllerBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000002830 /* Debug */,
+				000000002820 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000000002BD0 /* Build configuration list for PBXNativeTarget "yoga" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000002BF0 /* Debug */,
+				000000002BE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000000002E30 /* Build configuration list for PBXNativeTarget "Pods-artseeapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000002E50 /* Debug */,
+				000000002E40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 000000000000 /* Project object */;
+}

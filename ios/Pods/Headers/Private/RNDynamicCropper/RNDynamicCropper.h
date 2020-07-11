@@ -1,0 +1,1 @@
+../../../../../node_modules/react-native-dynamic-cropper/ios/src/RNDynamicCropper.h

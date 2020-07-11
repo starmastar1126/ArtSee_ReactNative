@@ -1,0 +1,58 @@
+{
+  "name": "artseeapp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0",
+    "react": "16.8.3",
+    "react-native": "0.59.9",
+    "react-native-camera": "^2.10.2",
+    "react-native-dynamic-cropper": "^0.1.0",
+    "react-native-elements": "^0.19.0",
+    "react-native-exif": "^0.4.0",
+    "react-native-expandable-section-flatlist": "^1.2.2",
+    "react-native-fbsdk": "^0.8.0",
+    "react-native-fetch-blob": "^0.10.8",
+    "react-native-gesture-handler": "^1.2.1",
+    "react-native-image-crop-picker": "^0.24.1",
+    "react-native-image-picker": "^0.28.1",
+    "react-native-image-resizer": "^1.0.1",
+    "react-native-image-zoom-viewer": "^2.2.26",
+    "react-native-keyboard-aware-scroll-view": "^0.8.0",
+    "react-native-mail": "^3.0.7",
+    "react-native-message-bar": "^2.0.10",
+    "react-native-modal": "^11.0.1",
+    "react-native-phone-call": "^1.0.9",
+    "react-native-qrcode-scanner": "^1.2.1",
+    "react-native-reanimated": "^1.0.1",
+    "react-native-scrollable-tab-view": "^0.10.0",
+    "react-native-share": "^1.2.1",
+    "react-native-swipeout": "^2.3.6",
+    "react-native-tab-view": "^2.6.0",
+    "react-native-uuid-generator": "^5.0.0",
+    "react-native-vector-icons": "^6.4.2",
+    "react-native-view-shot": "^2.6.0",
+    "react-navigation": "^3.11.0",
+    "react-navigation-redux-helpers": "^3.0.2",
+    "react-redux": "^5.0.7",
+    "realm": "^2.28.1",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/runtime": "^7.4.5",
+    "babel-jest": "^24.8.0",
+    "jest": "^24.8.0",
+    "metro-react-native-babel-preset": "^0.54.1",
+    "react-test-renderer": "16.8.3"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
