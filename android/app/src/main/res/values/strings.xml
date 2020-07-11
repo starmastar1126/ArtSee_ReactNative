@@ -1,5 +1,3 @@
 <resources>
-    <string name="app_name">ARTSEE</string>
-    <string name="facebook_app_id">296351944282716</string>
-    <string name="fb_login_protocol_scheme">fb296351944282716</string>
+    <string name="app_name">ViroSample</string>
 </resources>
